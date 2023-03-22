@@ -21,10 +21,10 @@
 
 
 module rgb_color_update(
-    input clock, [31:0] r, [31:0] g, [31:0] b,
+    input clock, [7:0] r, [7:0] g, [7:0] b,
     output reg [15:0] rgbHex
     );
-    reg [31:0] rtemp, gtemp, btemp;
+    reg [15:0] rtemp, gtemp, btemp;
     initial begin
         btemp = (b*31)/255;
         gtemp = ((g*63)/255)<<5;

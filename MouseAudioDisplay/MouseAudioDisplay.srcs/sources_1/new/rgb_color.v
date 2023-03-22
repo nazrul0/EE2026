@@ -21,10 +21,10 @@
 
 
 module rgb_color(
-    input [15:0] r, [15:0] g, [15:0] b,
+    input [7:0] r, [7:0] g, [7:0] b,
     output [15:0] rgbHex
     );
-    wire[31:0] rtemp, gtemp, btemp;
+    wire[15:0] rtemp, gtemp, btemp;
     assign btemp = (b*31)/255;
     assign gtemp = ((g*63)/255)<<5;
     assign rtemp = ((r*31)/255)<<11;
