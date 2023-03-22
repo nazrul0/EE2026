@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 22.03.2023 01:06:28
+// Create Date: 22.03.2023 15:09:25
 // Design Name: 
 // Module Name: volume_bars
 // Project Name: 
@@ -23,20 +23,20 @@
 module volume_bars(
     input [7:0] row,
     input [7:0] column,
-    input [15:0] peak_intensity,
+    input [11:0] peak_intensity,
     output [15:0] image_data
     );
     
     reg [15:0] bars [5:0][4:0]; // 63x32 pixels total, each bar is 5p tall with 2p buffer
     
-    reg black = 6'h000000;;
-    reg red = 6'hFF0000;
-    reg orange = 6'hFFBF00;
-    reg green = 6'h00FF00;
+    reg [23:0] black = 6'h000000;
+    reg [23:0] red = 6'hFF0000;
+    reg [23:0] orange = 6'hFFBF00;
+    reg [23:0] green = 6'h00FF00;
     
     initial begin
         
-        // bars[0][0] = black; bars[0][1] = black; bars[0][2] = black; bars[0][3] = black; bars[0][4] = black; bars[0][5] = black; bars[0][6] = black; bars[0][7] = black; bars[0][8] = black; bars[0][9] = black; bars[0][10] = black; bars[0][11] = black; bars[0][12] = black; bars[0][13] = black; bars[0][14] = black; bars[0][15] = black; bars[0][16] = black; bars[0][17] = black; bars[0][18] = black; bars[0][19] = black; bars[0][20] = black; bars[0][21] = black; bars[0][22] = black; bars[0][23] = black; bars[0][24] = black; bars[0][25] = black; bars[0][26] = black; bars[0][27] = black; bars[0][28] = black; bars[0][29] = black; bars[0][30] = black; bars[0][31] = black; 
+//        bars[0][0] = black; bars[0][1] = black; bars[0][2] = black; bars[0][3] = black; bars[0][4] = black; bars[0][5] = black; bars[0][6] = black; bars[0][7] = black; bars[0][8] = black; bars[0][9] = black; bars[0][10] = black; bars[0][11] = black; bars[0][12] = black; bars[0][13] = black; bars[0][14] = black; bars[0][15] = black; bars[0][16] = black; bars[0][17] = black; bars[0][18] = black; bars[0][19] = black; bars[0][20] = black; bars[0][21] = black; bars[0][22] = black; bars[0][23] = black; bars[0][24] = black; bars[0][25] = black; bars[0][26] = black; bars[0][27] = black; bars[0][28] = black; bars[0][29] = black; bars[0][30] = black; bars[0][31] = black; 
 
         bars[0][0] = green; bars[0][1] = green; bars[0][2] = green; bars[0][3] = green; bars[0][4] = green; bars[0][5] = green; bars[0][6] = green; bars[0][7] = green; bars[0][8] = green; bars[0][9] = green; bars[0][10] = green; bars[0][11] = green; bars[0][12] = green; bars[0][13] = green; bars[0][14] = green; bars[0][15] = green; bars[0][16] = green; bars[0][17] = green; bars[0][18] = green; bars[0][19] = green; bars[0][20] = green; bars[0][21] = green; bars[0][22] = green; bars[0][23] = green; bars[0][24] = green; bars[0][25] = green; bars[0][26] = green; bars[0][27] = green; bars[0][28] = green; bars[0][29] = green; bars[0][30] = green; bars[0][31] = green;
         bars[1][0] = green; bars[1][1] = green; bars[1][2] = green; bars[1][3] = green; bars[1][4] = green; bars[1][5] = green; bars[1][6] = green; bars[1][7] = green; bars[1][8] = green; bars[1][9] = green; bars[1][10] = green; bars[1][11] = green; bars[1][12] = green; bars[1][13] = green; bars[1][14] = green; bars[1][15] = green; bars[1][16] = green; bars[1][17] = green; bars[1][18] = green; bars[1][19] = green; bars[1][20] = green; bars[1][21] = green; bars[1][22] = green; bars[1][23] = green; bars[1][24] = green; bars[1][25] = green; bars[1][26] = green; bars[1][27] = green; bars[1][28] = green; bars[1][29] = green; bars[1][30] = green; bars[1][31] = green; 

@@ -2,69 +2,16 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Mar 22 13:31:17 2023
-# Process ID: 5008
-# Current directory: C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5504 C:\Users\Nazrul\Desktop\MouseAudioDisplay.xpr\MouseAudioDisplay\MouseAudioDisplay.xpr
-# Log file: C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/vivado.log
-# Journal file: C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay\vivado.jou
+# Start of session at: Sun Mar 19 21:57:37 2023
+# Process ID: 20516
+# Current directory: C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18948 C:\Users\Nazrul\Downloads\artemis.xpr\MouseAudioDisplay\MouseAudioDisplay.xpr
+# Log file: C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/vivado.log
+# Journal file: C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.xpr
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
 open_project C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.xpr
+update_compile_order -fileset sim_1
 update_compile_order -fileset sources_1
-close [ open C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v w ]
-add_files C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-current_project MouseAudioDisplay
-archive_project C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/Naz.xpr.zip -temp_dir C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/.Xil/Vivado-5008-DESKTOP-NI32BUM -force -include_local_ip_cache
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-current_project MouseAudioDisplay(2)
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:\Users\Nazrul\Desktop\MouseAudioDisplay.xpr\MouseAudioDisplay\MouseAudioDisplay.runs\impl_1\Top_Student.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_project

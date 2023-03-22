@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Nazrul/Desktop/MouseAudioDisplay.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1'
+HD_PWD='C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
