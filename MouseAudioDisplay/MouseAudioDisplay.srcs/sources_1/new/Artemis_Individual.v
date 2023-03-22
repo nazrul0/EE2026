@@ -30,37 +30,39 @@ module Artemis_Individual(
     reg[6:0] spriteX,spriteY;
     reg[7:0] spriteOffsetX=0,spriteOffsetY=0;
     reg[21:0] moveLeftCount=0,moveRightCount=0;
-    reg[21:0] doneMove=2499999;
+    parameter doneMove=2499999;
     reg [6:0] segCode[9:0];
     reg[9:0] charge;
     reg[3:0] seg0,seg1,seg2,seg3;
     reg[18:0] chargeTimer=0;
-    reg[18:0] chargeSegmentDone=499999;
+    parameter chargeSegmentDone=499999;
     reg[4:0] chargeCount=0;
     reg[16:0] chargeCountTimer=0;
-    reg[16:0] chargeCountTimerDone=99999;
+    parameter chargeCountTimerDone=99999;
     reg[7:0] railR;
     reg[7:0] railG;
     reg[7:0] railB;
     reg railFired = 0;
-    reg[7:0] railL,railRR;
-    reg[24:0] railCounter=0;
-    reg[24:0] railDuration=29999999;
-    reg[24:0] railCounterSmall, railDurationSmall;
+    reg[8:0] railCounter=0;
+    parameter railDuration=300;
+    reg[16:0] railTemporaryCounter=0;
+    parameter railTemporary=100000;
     reg[24:0] railFR, railFG, railFB;
     wire [15:0] railFColor;
     wire [15:0] railColor;
-    reg[26:0] ballTimer = 99999999;
+    parameter ballTimer = 99999999;
     reg[26:0] ballRespawnTimer = 0;
     reg ballExists;
-    integer ballX=50,ballY=0;
+    reg[6:0] ballX=50,ballY=0;
     reg[11:0] timeBetweenShots=0;
-    reg[26:0] ballSpeed = 15625000;
+    parameter ballSpeed = 15625000;
     reg[26:0] ballSpeedCounter = 0;
-    integer intX,intY;
     reg lost = 0;
     wire [15:0] gameover;
+    parameter hitTimer = 2499999;
+    reg [21:0] hitTime;
     initial begin
+        hitTime<=0;
         ballExists<=0;
         charge<=500;
         spriteX<=50;
@@ -95,23 +97,30 @@ module Artemis_Individual(
                 ballRespawnTimer=0;
             end
             if(!lost)begin
-                intX=x;
-                intY=y;
                 oled<=skyColor;
-                railCounterSmall=railCounter/1000;
-                railDurationSmall=railDuration/1000;
+                if(railFired)begin
+                    charge<=0;
+                    if((spriteX<=ballX+1)&&(spriteX+15>=ballX)&&hitTime<=hitTimer)begin
+                        ballExists=0;
+                        ballY=0;
+                        ballRespawnTimer=0;
+                    end
+                    if(hitTime<hitTimer)hitTime<=hitTime+1;
+                end else begin
+                    hitTime<=0;
+                    if(charge>1000)charge=1000;
+                    chargeTimer<=chargeTimer+1;
+                    if(chargeTimer==chargeSegmentDone)begin
+                        chargeTimer<=0;
+                        if(charge<1000)charge<=charge+1;
+                    end
+                end
                 if(chargeCount==4)chargeCount=0;
-                if(charge>1000)charge=1000;
                 chargeCountTimer<=chargeCountTimer+1;
                 if(chargeCountTimer==chargeCountTimerDone)begin
                     chargeCountTimer<=0;
                     chargeCount<=chargeCount+1;
                     if(chargeCount==3)chargeCount<=0;
-                end
-                chargeTimer<=chargeTimer+1;
-                if(chargeTimer==chargeSegmentDone)begin
-                    chargeTimer<=0;
-                    if(charge<1000)charge<=charge+1;
                 end
                 if(chargeCount==0||chargeCount==4)begin
                     seg0<=charge/1000;
@@ -140,8 +149,6 @@ module Artemis_Individual(
                 end
                 if(charge==1000)led[15]=1;
                 else led[15]=0;
-                railL<=spriteX+1;
-                railRR<=spriteX+15;
                 if(ballExists)begin
                     ballRespawnTimer<=0;
                     ballSpeedCounter<=ballSpeedCounter+1;
@@ -152,12 +159,12 @@ module Artemis_Individual(
                         end
                     end
                     if(ballY>=63)lost<=1;
-                    if((ballX*ballX + intX*intX - 2*intX*ballX<=2) && (ballY*ballY + intY*intY - 2*intY*ballY<=2))begin
+                    if((ballX*ballX + x*x - 2*x*ballX<=2) && (ballY*ballY + y*y - 2*y*ballY<=2))begin
                         oled<=16'hFFFF;
                     end
                 end else begin
                     ballY<=0;
-                    if(ballRespawnTimer>=ballTimer)begin
+                    if(ballRespawnTimer==ballTimer)begin
                         ballRespawnTimer<=0;
                         ballExists<=1;
                         ballX<=(timeBetweenShots%80)+7;
@@ -167,9 +174,9 @@ module Artemis_Individual(
                     end
                 end
                 if(sw[15]&&charge==1000)begin
-                    charge<=0;
                     railFired<=1;
-                    if(railL<ballX+2&&railRR>ballX-2)begin
+                    charge<=0;
+                    if((spriteX<=ballX+1)&&(spriteX+15>=ballX))begin
                         ballExists<=0;
                         ballY<=0;
                         ballRespawnTimer<=0;
@@ -178,46 +185,26 @@ module Artemis_Individual(
                     timeBetweenShots<=timeBetweenShots+1;
                     if(timeBetweenShots==100)timeBetweenShots<=0;
                 end
-                if(railFired||charge<50)begin
-                    railCounter<=railCounter+1;
+                if(railFired)begin
+                    railTemporaryCounter<=railTemporaryCounter+1;
+                    if(railTemporaryCounter==railTemporary)begin
+                        railCounter<=railCounter+1;
+                        railTemporaryCounter<=0;
+                    end
                     if(railCounter==railDuration)begin
                         railFired<=0;
+                        railCounter<=0;
+                        railTemporaryCounter<=0;
                     end
-                    if(x>railL&&x<railRR&&y<=61)begin
-                        railFR=255-((251*railCounterSmall)/railDurationSmall);
-                        railFG=255-((103*railCounterSmall)/railDurationSmall);
-                        railFB=255-((29*railCounterSmall)/railDurationSmall);
+                    if(x>spriteX+1&&x<spriteX+15&&y<=61)begin
+                        railFR=255-((251*railCounter)/railDuration);
+                        railFG=255-((103*railCounter)/railDuration);
+                        railFB=255-((29*railCounter)/railDuration);
                         oled<=railFColor;
                     end
                 end else begin
                     railCounter<=0;
-                end
-                if(!(btnL^btnR))begin 
-                    spriteState<=0;
-                    moveLeftCount<=0;
-                    moveRightCount<=0;
-                end else if(btnL)begin
-                    if(moveLeftCount!=doneMove)begin
-                        spriteState<=1;
-                        moveLeftCount<=moveLeftCount+1;
-                        moveRightCount<=0;
-                    end else begin
-                        moveLeftCount<=0;
-                        if(spriteX>0)begin
-                            spriteX<=spriteX-1;
-                        end
-                    end
-                end else if(btnR)begin
-                    if(moveRightCount!=doneMove)begin
-                        spriteState<=2;
-                        moveRightCount<=moveRightCount+1;
-                        moveLeftCount<=0;
-                    end else begin
-                        moveRightCount<=0;
-                        if(spriteX<79)begin
-                            spriteX<=spriteX+1;
-                        end
-                    end
+                    railTemporaryCounter<=0;
                 end
                 if(x>=spriteX&&y>=spriteY)begin
                     spriteOffsetX = x-spriteX;
@@ -229,6 +216,33 @@ module Artemis_Individual(
                             railG=125+(130*charge/1000);
                             railB=125+(130*charge/1000);
                             oled<=railColor;
+                        end
+                    end
+                end
+                if((!(btnL^btnR))||railFired)begin 
+                    spriteState<=0;
+                    moveLeftCount=0;
+                    moveRightCount=0;
+                end else if(btnL)begin
+                    if(moveLeftCount!=doneMove)begin
+                        spriteState<=1;
+                        moveLeftCount<=moveLeftCount+1;
+                        moveRightCount<=0;
+                    end else begin
+                        moveLeftCount=0;
+                        if(spriteX>0)begin
+                            spriteX<=spriteX-1;
+                        end
+                    end
+                end else if(btnR)begin
+                    if(moveRightCount!=doneMove)begin
+                        spriteState<=2;
+                        moveRightCount<=moveRightCount+1;
+                        moveLeftCount<=0;
+                    end else begin
+                        moveRightCount=0;
+                        if(spriteX<79)begin
+                            spriteX<=spriteX+1;
                         end
                     end
                 end

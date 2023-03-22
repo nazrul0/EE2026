@@ -23,29 +23,29 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.cache/wt [current_project]
-set_property parent.project_path C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.xpr [current_project]
+set_property webtalk.parent_dir D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/wt [current_project]
+set_property parent.project_path D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.cache/ip [current_project]
+set_property ip_output_repo d:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Get_Sprite.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v
-  C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Get_Sprite.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v
+  D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -55,13 +55,13 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Nazrul/Downloads/artemis.xpr/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+read_xdc D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc
+set_property used_in_implementation false [get_files D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top Top_Student -part xc7a35tcpg236-1
+synth_design -top Top_Student -part xc7a35tcpg236-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
 
 
 # disable binary constraint mode for synth run checkpoints
