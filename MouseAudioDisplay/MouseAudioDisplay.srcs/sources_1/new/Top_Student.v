@@ -15,7 +15,8 @@ module Top_Student (
     // Delete this comment and include Basys3 inputs and outputs here
     input clock, btnU, btnL, btnR, btnD, btnC, [15:0]sw,
     input JB3, // JB3 is J_MIC3_Pin3,   
-    output reg dp, [7:0] JC, reg [15:0] led, reg [3:0] an, reg [6:0] seg, reg JB1, reg JB4 // JB1, JB4 are J_MIC3_Pin1, J_MIC3_Pin4
+    output reg dp, [7:0] JC, reg [15:0] led, reg [3:0] an, reg [6:0] seg, reg JB1, reg JB4, // JB1, JB4 are J_MIC3_Pin1, J_MIC3_Pin4
+    output reg [3:0] JA
     );
     reg clk6p25m = 0;
     integer clk6p25m_count = 0;
@@ -49,6 +50,14 @@ module Top_Student (
     wire [3:0] arty_an;
     wire [6:0] arty_seg;
     wire [15:0] arty_oled;
+   
+    //Szj's declarations
+    reg zj_enable = 0;
+    wire [3:0] zj_JA;
+    wire [15:0] zj_led;
+    reg victory_sound = 0, trigger_ges = 0;
+    wire [3:0] team_imp_JA;
+    
     initial begin
         s[0][0]=5;s[0][1]=13;s[0][2]=5;s[0][3]=13;
         s[1][0]=5;s[1][1]=13;s[1][2]=13;s[1][3]=37;
@@ -131,6 +140,7 @@ module Top_Student (
         oled_data <= 16'h0000;
         if(sw[0]==1)menuState<=0;
         if(menuState!=1)arty_enable=0;
+        if(menuState!=2)zj_enable = 0;
         if(menuState!=3)naz_enable=0;
         if(menuState==0)begin
             an = 4'b1111;
@@ -201,6 +211,10 @@ module Top_Student (
         */
         end else if(menuState==2)begin
         //SZ
+        zj_enable = 1;
+        JA <= zj_JA;
+        led <= zj_led;
+        
         end else if(menuState==3)begin
         //NS
             naz_enable = 1;
@@ -216,6 +230,8 @@ module Top_Student (
         //IRP
         end else begin
         //TEAM
+        JA <= team_imp_JA;
+        //trigger_ges <= 1;
             if(sw[14]==1)begin
                 win_state = 2;
             end
@@ -316,8 +332,12 @@ module Top_Student (
                 if(num_lives==0)win_state = 1;
             end else if (win_state == 1)begin
                 oled_data <= gameover;
+                victory_sound <= 0;
+                trigger_ges <= 1;
             end else begin
                 oled_data <= win;
+                victory_sound <= 1;
+                trigger_ges <= 1;
             end
         end
     end
@@ -364,8 +384,24 @@ module Top_Student (
         .oled(naz_oled)
         );
         
-        
-        
-        
+
+        sz_individual szj ( 
+            .clk(clock),
+            .btnC_i(btnC),
+            .btnD_i(btnD), 
+            .btnU_i(btnU),
+            .btnL_i(btnL),
+            .zj_enable(zj_enable),
+            .sw_i(sw),
+            .JX(zj_JA),
+            .led(zj_led) 
+            );
+
+  game_end_sound gesound(
+                .victory(victory_sound),
+                .clk(clock),
+                .JX(team_imp_JA),
+                .trigger(trigger_ges)
+                );
     
 endmodule
