@@ -1,0 +1,117 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12988
+License: Customer
+
+Current time: 	Tue Mar 28 00:07:30 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 6 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Zijin
+User home directory: C:/Users/75635
+User working directory: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/75635/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/75635/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/75635/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/vivado.log
+Vivado journal file location: 	C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/vivado.jou
+Engine tmp dir: 	C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/.Xil/Vivado-12988-LAPTOP-P1EPJJFM
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	194 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 502 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 65 MB (+66058kb) [00:00:15]
+// [Engine Memory]: 470 MB (+341121kb) [00:00:15]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\75635\Desktop\EE2026\team project\MouseAudioDisplay\MouseAudioDisplay.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 515 MB. GUI used memory: 33 MB. Current time: 3/28/23 12:07:32 AM CST
+// [Engine Memory]: 515 MB (+22882kb) [00:00:19]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 558 MB (+17957kb) [00:00:25]
+// [Engine Memory]: 588 MB (+1752kb) [00:00:30]
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 822.422 ; gain = 99.809 
+// Project name: MouseAudioDisplay; location: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 45 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (Artemis_Individual.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), arty : Artemis_Individual (Artemis_Individual.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), my_20KHz_clk : unit_clk (unit_clk.v)]", 7, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), szj : sz_individual (sz_individual.v)]", 10); // B (D, ck)
+// [GUI Memory]: 70 MB (+1110kb) [00:01:29]
+// [GUI Memory]: 74 MB (+434kb) [00:01:39]
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), szj : sz_individual (sz_individual.v), clock_20kHz : clock_divider (clock_divider.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), szj : sz_individual (sz_individual.v), clock_20kHz : clock_divider (clock_divider.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("clock_divider.v", 260, 163); // ce (w, ck)
+selectCodeEditor("clock_divider.v", 260, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 79 MB (+1983kb) [00:02:15]
+// [GUI Memory]: 85 MB (+1556kb) [00:04:14]
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1718 ms. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 89 MB (+135kb) [00:08:25]
