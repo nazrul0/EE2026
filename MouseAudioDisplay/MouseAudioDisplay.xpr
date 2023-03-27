@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="D:/Documents/EE2026/MouseAudioDisplay/MouseAudioDisplay.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="143dfa194cbd4ea78ef05f746a5705b0"/>
@@ -354,10 +354,10 @@
         <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design">
           <Option Id="ResourceSharing">2</Option>
-          <Option Id="RepFanoutThreshold">400</Option>
-          <Option Id="FsmExtraction">1</Option>
           <Option Id="ShregMinSize">5</Option>
           <Option Id="NoCombineLuts">1</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
+          <Option Id="FsmExtraction">1</Option>
           <Option Id="KeepEquivalentRegisters">1</Option>
         </Step>
       </Strategy>

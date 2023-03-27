@@ -22,39 +22,39 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Get_Sprite.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v}
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/music_box.v
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v}
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/num_to_count.v
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_note.v
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/push_button_output.v
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v}
-  C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/save_note.v
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v}
-  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Get_Sprite.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/music_box.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/num_to_count.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_note.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/push_button_output.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/save_note.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v}
 }
-read_vhdl -library xil_defaultlib {{C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Output.vhd}}
+read_vhdl -library xil_defaultlib {{C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Output.vhd}}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -63,8 +63,8 @@ read_vhdl -library xil_defaultlib {{C:/Users/75635/Desktop/EE2026/team project/M
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc}}]
+read_xdc {{C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/constrs_1/new/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
