@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 24 14:04:39 2023
+# Process ID: 1676
+# Current directory: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1580 C:\Users\75635\Desktop\EE2026\team project\MouseAudioDisplay\MouseAudioDisplay.xpr
+# Log file: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/vivado.log
+# Journal file: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v} w ]
+add_files {{C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/push_button_output.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/music_box.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/num_to_count.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_note.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v C:/Users/75635/Desktop/EE2026/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/save_note.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
