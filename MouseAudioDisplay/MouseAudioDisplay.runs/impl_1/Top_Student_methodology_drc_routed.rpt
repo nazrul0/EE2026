@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Mar 28 01:05:03 2023
+| Date         : Wed Mar 29 02:31:18 2023
 | Host         : DESKTOP-NI32BUM running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 406
+             Violations found: 539
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | SYNTH-13  | Warning  | combinational multiplier      | 2          |
-| TIMING-16 | Warning  | Large setup violation         | 84         |
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 257        |
+| TIMING-16 | Warning  | Large setup violation         | 145        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 329        |
 | TIMING-18 | Warning  | Missing input or output delay | 63         |
 +-----------+----------+-------------------------------+------------+
 
@@ -47,422 +47,727 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.123 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.048 ns between row_reg[2]_rep/C (clocked by sys_clk_pin) and arty/oled_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.127 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.059 ns between naz/start_clock_counter_reg/C (clocked by sys_clk_pin) and naz/clock_counter_reg[14]_replica_4/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -1.132 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.086 ns between naz/start_clock_counter_reg/C (clocked by sys_clk_pin) and naz/clock_counter_reg[0]_replica_4/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -1.237 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.102 ns between naz/start_clock_counter_reg/C (clocked by sys_clk_pin) and naz/clock_counter_reg[7]_replica_6/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -1.508 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.170 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/seg1_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -1.744 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.186 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[5]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -1.914 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.225 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[6]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -2.100 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.228 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[7]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -2.159 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.237 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[4]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -2.218 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.237 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[5]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -2.353 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.243 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -2.369 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.243 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -2.378 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.245 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -2.443 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.245 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -2.464 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.253 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[6]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -2.469 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.253 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[7]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -2.485 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.253 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[5]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -2.559 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.269 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[28]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -2.580 ns between arty/railFB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.309 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[6]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -2.726 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.324 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -2.791 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.324 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[7]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -2.901 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.344 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -2.921 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.344 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -2.997 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.344 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -3.005 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.344 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railB_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -3.020 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.344 ns between column_reg[4]_rep__0/C (clocked by sys_clk_pin) and oled_data_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -3.040 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.353 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -3.116 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.353 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -3.124 ns between arty/railB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.353 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railG_reg[4]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -3.528 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.367 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -3.535 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.367 ns between arty/spriteState_reg[1]/C (clocked by sys_clk_pin) and arty/railR_reg[4]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -3.592 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.383 ns between naz/start_clock_counter_reg/C (clocked by sys_clk_pin) and naz/clock_counter_reg[11]_replica_6/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -4.020 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.412 ns between naz/start_clock_counter_reg/C (clocked by sys_clk_pin) and naz/clock_counter_reg[14]_replica_5/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -4.022 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.693 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -4.025 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.700 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -4.675 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.834 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#37 Warning
 Large setup violation  
-There is a large setup violation of -4.680 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.096 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#38 Warning
 Large setup violation  
-There is a large setup violation of -4.887 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.473 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#39 Warning
 Large setup violation  
-There is a large setup violation of -5.188 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.478 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#40 Warning
 Large setup violation  
-There is a large setup violation of -5.261 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.752 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#41 Warning
 Large setup violation  
-There is a large setup violation of -5.263 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.648 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#42 Warning
 Large setup violation  
-There is a large setup violation of -5.336 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.724 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#43 Warning
 Large setup violation  
-There is a large setup violation of -5.377 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.839 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#44 Warning
 Large setup violation  
-There is a large setup violation of -5.403 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.974 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#45 Warning
 Large setup violation  
-There is a large setup violation of -5.403 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.979 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#46 Warning
 Large setup violation  
-There is a large setup violation of -5.408 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFG_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.990 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#47 Warning
 Large setup violation  
-There is a large setup violation of -5.697 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.138 ns between arty/railCounter_reg[7]/C (clocked by sys_clk_pin) and arty/railFR_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#48 Warning
 Large setup violation  
-There is a large setup violation of -5.707 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.254 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[24]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#49 Warning
 Large setup violation  
-There is a large setup violation of -5.757 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.365 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#50 Warning
 Large setup violation  
-There is a large setup violation of -5.811 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.528 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#51 Warning
 Large setup violation  
-There is a large setup violation of -5.818 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.690 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#52 Warning
 Large setup violation  
-There is a large setup violation of -5.839 ns between arty/railCounter_reg[3]/C (clocked by sys_clk_pin) and arty/railFR_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.690 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#53 Warning
 Large setup violation  
-There is a large setup violation of -5.844 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.710 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#54 Warning
 Large setup violation  
-There is a large setup violation of -5.845 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -12.878 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railR_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#55 Warning
 Large setup violation  
-There is a large setup violation of -5.846 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.053 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#56 Warning
 Large setup violation  
-There is a large setup violation of -5.846 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.066 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#57 Warning
 Large setup violation  
-There is a large setup violation of -5.852 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.118 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#58 Warning
 Large setup violation  
-There is a large setup violation of -5.905 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.276 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#59 Warning
 Large setup violation  
-There is a large setup violation of -5.910 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.334 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#60 Warning
 Large setup violation  
-There is a large setup violation of -6.174 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.450 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#61 Warning
 Large setup violation  
-There is a large setup violation of -6.219 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.611 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#62 Warning
 Large setup violation  
-There is a large setup violation of -6.268 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -13.773 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#63 Warning
 Large setup violation  
-There is a large setup violation of -6.285 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.323 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#64 Warning
 Large setup violation  
-There is a large setup violation of -6.406 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.464 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#65 Warning
 Large setup violation  
-There is a large setup violation of -6.408 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.524 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#66 Warning
 Large setup violation  
-There is a large setup violation of -6.485 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.532 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#67 Warning
 Large setup violation  
-There is a large setup violation of -6.519 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.554 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#68 Warning
 Large setup violation  
-There is a large setup violation of -6.649 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.654 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#69 Warning
 Large setup violation  
-There is a large setup violation of -6.767 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.829 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railG_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#70 Warning
 Large setup violation  
-There is a large setup violation of -6.781 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.917 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/railB_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#71 Warning
 Large setup violation  
-There is a large setup violation of -6.790 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -14.918 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[23]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#72 Warning
 Large setup violation  
-There is a large setup violation of -6.796 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -17.783 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[22]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#73 Warning
 Large setup violation  
-There is a large setup violation of -6.800 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.115 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#74 Warning
 Large setup violation  
-There is a large setup violation of -6.815 ns between arty/ballX_reg[2]_replica/C (clocked by sys_clk_pin) and arty/oled_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.122 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#75 Warning
 Large setup violation  
-There is a large setup violation of -6.922 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railR_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.404 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#76 Warning
 Large setup violation  
-There is a large setup violation of -6.923 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.440 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#77 Warning
 Large setup violation  
-There is a large setup violation of -6.936 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.790 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#78 Warning
 Large setup violation  
-There is a large setup violation of -7.009 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -20.476 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[21]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#79 Warning
 Large setup violation  
-There is a large setup violation of -7.010 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -23.010 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#80 Warning
 Large setup violation  
-There is a large setup violation of -7.011 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -25.697 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[19]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#81 Warning
 Large setup violation  
-There is a large setup violation of -7.012 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -28.470 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[18]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#82 Warning
 Large setup violation  
-There is a large setup violation of -7.099 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railG_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.665 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#83 Warning
 Large setup violation  
-There is a large setup violation of -7.100 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.835 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#84 Warning
 Large setup violation  
-There is a large setup violation of -7.148 ns between arty/lost_reg_rep__2_replica_3/C (clocked by sys_clk_pin) and arty/railB_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.962 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#85 Warning
+Large setup violation  
+There is a large setup violation of -31.167 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[17]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#86 Warning
+Large setup violation  
+There is a large setup violation of -33.826 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[16]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#87 Warning
+Large setup violation  
+There is a large setup violation of -36.619 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#88 Warning
+Large setup violation  
+There is a large setup violation of -38.946 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#89 Warning
+Large setup violation  
+There is a large setup violation of -4.022 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[27]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#90 Warning
+Large setup violation  
+There is a large setup violation of -4.183 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#91 Warning
+Large setup violation  
+There is a large setup violation of -4.248 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#92 Warning
+Large setup violation  
+There is a large setup violation of -4.358 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#93 Warning
+Large setup violation  
+There is a large setup violation of -4.378 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#94 Warning
+Large setup violation  
+There is a large setup violation of -4.454 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#95 Warning
+Large setup violation  
+There is a large setup violation of -4.462 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#96 Warning
+Large setup violation  
+There is a large setup violation of -4.476 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#97 Warning
+Large setup violation  
+There is a large setup violation of -4.496 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#98 Warning
+Large setup violation  
+There is a large setup violation of -4.533 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#99 Warning
+Large setup violation  
+There is a large setup violation of -4.572 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#100 Warning
+Large setup violation  
+There is a large setup violation of -4.580 ns between arty/railB_reg[0]/C (clocked by sys_clk_pin) and arty/nolabel_line259/rgbHex_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#101 Warning
+Large setup violation  
+There is a large setup violation of -4.886 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#102 Warning
+Large setup violation  
+There is a large setup violation of -4.946 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#103 Warning
+Large setup violation  
+There is a large setup violation of -41.726 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#104 Warning
+Large setup violation  
+There is a large setup violation of -44.297 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#105 Warning
+Large setup violation  
+There is a large setup violation of -46.951 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#106 Warning
+Large setup violation  
+There is a large setup violation of -49.635 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#107 Warning
+Large setup violation  
+There is a large setup violation of -5.078 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#108 Warning
+Large setup violation  
+There is a large setup violation of -5.094 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[10]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#109 Warning
+Large setup violation  
+There is a large setup violation of -5.168 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#110 Warning
+Large setup violation  
+There is a large setup violation of -5.189 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#111 Warning
+Large setup violation  
+There is a large setup violation of -5.192 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#112 Warning
+Large setup violation  
+There is a large setup violation of -5.208 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#113 Warning
+Large setup violation  
+There is a large setup violation of -5.282 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#114 Warning
+Large setup violation  
+There is a large setup violation of -5.303 ns between arty/railFB_reg[1]/C (clocked by sys_clk_pin) and arty/nolabel_line260/rgbHex_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#115 Warning
+Large setup violation  
+There is a large setup violation of -5.701 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#116 Warning
+Large setup violation  
+There is a large setup violation of -5.824 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#117 Warning
+Large setup violation  
+There is a large setup violation of -5.838 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#118 Warning
+Large setup violation  
+There is a large setup violation of -52.430 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#119 Warning
+Large setup violation  
+There is a large setup violation of -55.124 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[8]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#120 Warning
+Large setup violation  
+There is a large setup violation of -57.788 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#121 Warning
+Large setup violation  
+There is a large setup violation of -6.499 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#122 Warning
+Large setup violation  
+There is a large setup violation of -6.784 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#123 Warning
+Large setup violation  
+There is a large setup violation of -6.789 ns between arty/railCounter_reg[0]/C (clocked by sys_clk_pin) and arty/railFB_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#124 Warning
+Large setup violation  
+There is a large setup violation of -6.870 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[26]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#125 Warning
+Large setup violation  
+There is a large setup violation of -60.527 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#126 Warning
+Large setup violation  
+There is a large setup violation of -63.091 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#127 Warning
+Large setup violation  
+There is a large setup violation of -65.871 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#128 Warning
+Large setup violation  
+There is a large setup violation of -68.623 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#129 Warning
+Large setup violation  
+There is a large setup violation of -8.976 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#130 Warning
+Large setup violation  
+There is a large setup violation of -8.978 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#131 Warning
+Large setup violation  
+There is a large setup violation of -9.369 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#132 Warning
+Large setup violation  
+There is a large setup violation of -9.383 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#133 Warning
+Large setup violation  
+There is a large setup violation of -9.388 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[15]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#134 Warning
+Large setup violation  
+There is a large setup violation of -9.472 ns between naz/clock_counter_reg[0]_replica_5/C (clocked by sys_clk_pin) and naz/frequency_reg[25]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#135 Warning
+Large setup violation  
+There is a large setup violation of -9.531 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[12]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#136 Warning
+Large setup violation  
+There is a large setup violation of -9.551 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[5]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#137 Warning
+Large setup violation  
+There is a large setup violation of -9.553 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#138 Warning
+Large setup violation  
+There is a large setup violation of -9.553 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#139 Warning
+Large setup violation  
+There is a large setup violation of -9.558 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[13]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#140 Warning
+Large setup violation  
+There is a large setup violation of -9.686 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#141 Warning
+Large setup violation  
+There is a large setup violation of -9.766 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[14]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#142 Warning
+Large setup violation  
+There is a large setup violation of -9.791 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#143 Warning
+Large setup violation  
+There is a large setup violation of -9.793 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[6]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#144 Warning
+Large setup violation  
+There is a large setup violation of -9.830 ns between arty/lost_reg_rep__0/C (clocked by sys_clk_pin) and arty/railFG_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#145 Warning
+Large setup violation  
+There is a large setup violation of -9.921 ns between arty/lost_reg_rep__1/C (clocked by sys_clk_pin) and arty/oled_reg[9]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-17#1 Warning
@@ -537,12 +842,12 @@ Related violations: <none>
 
 TIMING-17#15 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg[8]_srl9___gesound_test_out_temp1_reg_r_16/CLK is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg[8]_srl9___gesound_test_out_temp1_reg_r_7/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#16 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg[9]_gesound_test_out_temp1_reg_r_17/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg[9]_gesound_test_out_temp1_reg_r_8/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#17 Warning
@@ -552,47 +857,47 @@ Related violations: <none>
 
 TIMING-17#18 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_10/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#19 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_11/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#20 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_12/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#21 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_13/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#22 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_14/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_15/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_5/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_16/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_6/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_17/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_7/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Warning
 Non-clocked sequential cell  
-The clock pin gesound/test_out/temp1_reg_r_9/C is not reached by a timing clock
+The clock pin gesound/test_out/temp1_reg_r_8/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Warning
@@ -797,957 +1102,1317 @@ Related violations: <none>
 
 TIMING-17#67 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[1]/C is not reached by a timing clock
+The clock pin naz/led_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[2]/C is not reached by a timing clock
+The clock pin naz/led_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[3]/C is not reached by a timing clock
+The clock pin naz/led_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[4]/C is not reached by a timing clock
+The clock pin naz/led_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[5]/C is not reached by a timing clock
+The clock pin naz/led_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#72 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[6]/C is not reached by a timing clock
+The clock pin naz/led_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#73 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[7]/C is not reached by a timing clock
+The clock pin naz/led_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#74 Warning
 Non-clocked sequential cell  
-The clock pin naz/led_reg[8]/C is not reached by a timing clock
+The clock pin naz/led_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[0]/C is not reached by a timing clock
+The clock pin naz/led_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[1]/C is not reached by a timing clock
+The clock pin naz/led_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[2]/C is not reached by a timing clock
+The clock pin naz/led_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[3]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[4]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[5]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[6]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[7]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_ld_display/led_reg[8]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_reg[0]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_reg[2]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_reg[3]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_selector_reg[0]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_selector_reg[1]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_selector_reg[2]/C is not reached by a timing clock
+The clock pin naz/naz_ld_display/led_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/an_selector_reg[3]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[0]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[1]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[2]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_selector_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[3]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_selector_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[4]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_selector_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[5]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/an_selector_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Warning
 Non-clocked sequential cell  
-The clock pin naz/naz_seg_display/seg_reg[6]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[0]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[10]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[11]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[1]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[2]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[3]/C is not reached by a timing clock
+The clock pin naz/naz_seg_display/seg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[4]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[5]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[6]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[7]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[8]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Warning
 Non-clocked sequential cell  
-The clock pin naz/peak_intensity_reg[9]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[0]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[1]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[2]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[3]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[4]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[5]/C is not reached by a timing clock
+The clock pin naz/peak_intensity_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Warning
 Non-clocked sequential cell  
-The clock pin naz/seg_reg[6]/C is not reached by a timing clock
+The clock pin naz/seg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+The clock pin naz/seg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[10]/C is not reached by a timing clock
+The clock pin naz/seg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[11]/C is not reached by a timing clock
+The clock pin naz/seg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[12]/C is not reached by a timing clock
+The clock pin naz/seg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[13]/C is not reached by a timing clock
+The clock pin naz/seg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[14]/C is not reached by a timing clock
+The clock pin naz/seg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[15]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[16]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[17]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[18]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[19]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[1]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[20]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[21]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[22]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[23]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[24]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[25]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[26]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[27]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[28]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[29]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[2]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[30]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#141 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[31]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#142 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[3]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#143 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[4]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[5]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[6]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[7]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[8]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Warning
 Non-clocked sequential cell  
-The clock pin oled/FSM_onehot_state_reg[9]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[0]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[10]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[11]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[12]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[13]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[14]/C is not reached by a timing clock
+The clock pin oled/FSM_onehot_state_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[15]/C is not reached by a timing clock
+The clock pin oled/delay_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#156 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[16]/C is not reached by a timing clock
+The clock pin oled/delay_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[17]/C is not reached by a timing clock
+The clock pin oled/delay_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[18]/C is not reached by a timing clock
+The clock pin oled/delay_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[19]/C is not reached by a timing clock
+The clock pin oled/delay_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[1]/C is not reached by a timing clock
+The clock pin oled/delay_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[2]/C is not reached by a timing clock
+The clock pin oled/delay_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#162 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[3]/C is not reached by a timing clock
+The clock pin oled/delay_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#163 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[4]/C is not reached by a timing clock
+The clock pin oled/delay_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#164 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[5]/C is not reached by a timing clock
+The clock pin oled/delay_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#165 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[6]/C is not reached by a timing clock
+The clock pin oled/delay_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#166 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[7]/C is not reached by a timing clock
+The clock pin oled/delay_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#167 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[8]/C is not reached by a timing clock
+The clock pin oled/delay_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#168 Warning
 Non-clocked sequential cell  
-The clock pin oled/delay_reg[9]/C is not reached by a timing clock
+The clock pin oled/delay_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#169 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[0]/C is not reached by a timing clock
+The clock pin oled/delay_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#170 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[10]/C is not reached by a timing clock
+The clock pin oled/delay_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#171 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[11]/C is not reached by a timing clock
+The clock pin oled/delay_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#172 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[12]/C is not reached by a timing clock
+The clock pin oled/delay_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#173 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[13]/C is not reached by a timing clock
+The clock pin oled/delay_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#174 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[14]/C is not reached by a timing clock
+The clock pin oled/delay_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#175 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[15]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#176 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[16]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#177 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[1]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#178 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[2]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#179 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[3]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#180 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[4]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#181 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[5]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#182 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[6]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#183 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[7]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#184 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[8]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#185 Warning
 Non-clocked sequential cell  
-The clock pin oled/frame_counter_reg[9]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#186 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[0]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#187 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[1]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#188 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[2]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#189 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[3]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#190 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[4]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#191 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_bit_count_reg[5]/C is not reached by a timing clock
+The clock pin oled/frame_counter_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#192 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[0]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#193 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[10]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#194 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[11]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#195 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[12]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#196 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[13]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#197 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[14]/C is not reached by a timing clock
+The clock pin oled/spi_word_bit_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#198 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[15]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#199 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[16]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#200 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[17]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#201 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[18]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#202 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[19]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#203 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[1]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#204 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[20]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#205 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[21]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#206 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[22]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#207 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[23]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#208 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[24]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#209 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[25]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#210 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[26]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#211 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[27]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#212 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[28]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#213 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[29]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#214 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[2]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#215 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[30]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#216 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[31]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#217 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[32]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#218 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[33]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#219 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[34]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#220 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[35]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#221 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[36]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#222 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[37]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#223 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[38]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[32]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#224 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[39]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[33]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#225 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[3]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[34]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#226 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[4]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[35]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#227 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[5]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[36]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#228 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[6]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[37]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#229 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[7]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[38]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#230 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[8]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[39]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#231 Warning
 Non-clocked sequential cell  
-The clock pin oled/spi_word_reg[9]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#232 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/FSM_onehot_current_state_reg[0]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#233 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/FSM_onehot_current_state_reg[1]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#234 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/FSM_onehot_current_state_reg[2]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#235 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/clk_counter_reg[0]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#236 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/shiftCounter_reg[0]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#237 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/shiftCounter_reg[1]/C is not reached by a timing clock
+The clock pin oled/spi_word_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#238 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/shiftCounter_reg[2]/C is not reached by a timing clock
+The clock pin szj/test_out/FSM_onehot_current_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#239 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/shiftCounter_reg[3]/C is not reached by a timing clock
+The clock pin szj/test_out/FSM_onehot_current_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#240 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[10]/C is not reached by a timing clock
+The clock pin szj/test_out/FSM_onehot_current_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#241 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[11]/C is not reached by a timing clock
+The clock pin szj/test_out/clk_counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#242 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[12]/C is not reached by a timing clock
+The clock pin szj/test_out/shiftCounter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#243 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[13]/C is not reached by a timing clock
+The clock pin szj/test_out/shiftCounter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#244 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[14]/C is not reached by a timing clock
+The clock pin szj/test_out/shiftCounter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#245 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[15]/C is not reached by a timing clock
+The clock pin szj/test_out/shiftCounter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#246 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[8]_srl9___szj_test_out_temp1_reg_r_7/CLK is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#247 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg[9]_szj_test_out_temp1_reg_r_8/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#248 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#249 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_0/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#250 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_1/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#251 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_2/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#252 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_3/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[8]_srl9___szj_test_out_temp1_reg_r_16/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#253 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_4/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg[9]_szj_test_out_temp1_reg_r_17/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#254 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_5/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg_r/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#255 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_6/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg_r_10/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#256 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_7/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg_r_11/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#257 Warning
 Non-clocked sequential cell  
-The clock pin szj/test_out/temp1_reg_r_8/C is not reached by a timing clock
+The clock pin szj/test_out/temp1_reg_r_12/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#258 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_13/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#259 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_14/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#260 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_15/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#261 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_16/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#262 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_17/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#263 Warning
+Non-clocked sequential cell  
+The clock pin szj/test_out/temp1_reg_r_9/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#264 Warning
+Non-clocked sequential cell  
+The clock pin team/an_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Warning
+Non-clocked sequential cell  
+The clock pin team/an_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Warning
+Non-clocked sequential cell  
+The clock pin team/an_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Warning
+Non-clocked sequential cell  
+The clock pin team/count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Warning
+Non-clocked sequential cell  
+The clock pin team/dp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#287 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#288 Warning
+Non-clocked sequential cell  
+The clock pin team/led_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#289 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#290 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#291 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#292 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#293 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#294 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#296 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#297 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#298 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Warning
+Non-clocked sequential cell  
+The clock pin team/peak_intensity_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#303 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#304 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#305 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#306 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#307 Warning
+Non-clocked sequential cell  
+The clock pin team/seg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#308 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#309 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#310 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#311 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#312 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#313 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#314 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#315 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#316 Warning
+Non-clocked sequential cell  
+The clock pin team/team_ld_display/led_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#317 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/an_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#318 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/an_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#319 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/an_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#320 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/an_selector_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#321 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/an_selector_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#322 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/dp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#323 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#324 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#325 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#326 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#327 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#328 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#329 Warning
+Non-clocked sequential cell  
+The clock pin team/team_seg_display/seg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning

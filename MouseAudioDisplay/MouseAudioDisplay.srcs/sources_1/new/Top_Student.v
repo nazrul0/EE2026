@@ -295,6 +295,21 @@ module Top_Student (
                         number = i;
                     end
                 end
+                
+                if (number < 10)
+                begin
+//                    if (sw[15] == 1)
+//                    begin
+//                        led[15] <= 1;
+//                    end
+                    
+                    seg <= team_seg;
+                    an <= team_an;
+                    dp <= team_dp;
+                    led <= team_led;
+                    
+                end
+                
                 for(integer i = 0;i<10;i=i+1)begin
                     led[i]=0;
                 end
@@ -341,6 +356,8 @@ module Top_Student (
             end
         end
     end
+    
+    
 
     Oled_Display oled(
     .clk(clk6p25m), .reset(), 
@@ -370,6 +387,13 @@ module Top_Student (
         jb4,                     // J_MIC3_Pin4, MIC3 serial clock
         MIC_in                   // 12-bit audio sample data
         );
+    
+    
+    wire [11:0] team_led;
+    wire [3:0] team_an;
+    wire [6:0] team_seg;
+    wire team_dp;
+    team_output team(.clock(clock), .MIC_in(MIC_in), .led(team_led), .sw(sw), .an(team_an), .seg(team_seg), .dp(team_dp), .number(2));  // change number here back to variable once 4e2 is ready
     
     Naz_Individual naz(
         .clock(clock),
