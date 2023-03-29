@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Mar 29 17:20:46 2023
+| Date         : Wed Mar 29 18:23:28 2023
 | Host         : LAPTOP-P1EPJJFM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |   104 |
-| Unused register locations in slices containing registers |   180 |
+| Number of unique control sets                            |   110 |
+| Unused register locations in slices containing registers |   200 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,14 +34,14 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            5 |
-|      4 |            3 |
-|      6 |            4 |
-|      8 |            7 |
-|     10 |            3 |
+|      2 |            7 |
+|      4 |            4 |
+|      6 |            5 |
+|      8 |            6 |
+|     10 |            1 |
 |     12 |            2 |
 |     14 |            2 |
-|    16+ |           78 |
+|    16+ |           83 |
 +--------+--------------+
 
 
@@ -51,12 +51,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             612 |          154 |
+| No           | No                    | No                     |             654 |          183 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |            2246 |          299 |
-| Yes          | No                    | No                     |             980 |          226 |
+| No           | Yes                   | No                     |            2472 |          323 |
+| Yes          | No                    | No                     |             990 |          223 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             790 |          149 |
+| Yes          | Yes                   | No                     |             828 |          148 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -66,110 +66,116 @@ Table of Contents
 +-----------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
 |               Clock Signal              |                      Enable Signal                      |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
 +-----------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
-|  gesound/test_out/JX[0]                 |                                                         |                                                       |                1 |              2 |
-|  clock_IBUF_BUFG                        | dp_i_1_n_0                                              |                                                       |                1 |              2 |
+|  pts/clock_50mHz/clk_counter_reg[0]     |                                                         |                                                       |                1 |              2 |
 |  szj/clock_50mHz/clk50m                 |                                                         |                                                       |                1 |              2 |
+|  gesound/test_out/temp1_reg[10]_0       |                                                         |                                                       |                1 |              2 |
+|  clock_IBUF_BUFG                        | dp_i_1__0_n_0                                           |                                                       |                1 |              2 |
+|  gesound/clock_50mHz/clk_counter_reg[0] |                                                         |                                                       |                1 |              2 |
+|  pts/test_out/temp1_reg[10]_0           |                                                         |                                                       |                1 |              2 |
 | ~clk6p25m_reg_n_0_BUFG                  |                                                         |                                                       |                1 |              2 |
-|  gesound/clock_50mHz/I306               |                                                         |                                                       |                1 |              2 |
 |  naz/naz_seg_display/my_1KHz_clk/my_clk |                                                         |                                                       |                1 |              4 |
+|  gesound/test_out/temp1_reg[10]_0       | gesound/test_out/temp2                                  |                                                       |                2 |              4 |
+|  pts/test_out/temp1_reg[10]_0           | pts/test_out/temp2                                      |                                                       |                2 |              4 |
 |  clock_IBUF_BUFG                        | JB4_i_1_n_0                                             |                                                       |                1 |              4 |
-|  gesound/test_out/JX[0]                 | gesound/test_out/out[1]                                 |                                                       |                2 |              4 |
 |  naz/naz_ld_display/my_20KHz_clk/my_clk |                                                         |                                                       |                2 |              6 |
-|  clock_IBUF_BUFG                        | JA[3]_i_1_n_0                                           |                                                       |                2 |              6 |
-|  gesound/test_out/JX[0]                 | gesound/test_out/FSM_onehot_current_state[3]_i_1__0_n_0 |                                                       |                1 |              6 |
-|  szj/test_out/zj_JA[3]                  | szj/test_out/FSM_onehot_current_state[3]_i_1_n_0        |                                                       |                1 |              6 |
+|  gesound/test_out/temp1_reg[10]_0       | gesound/test_out/FSM_onehot_current_state[3]_i_1__1_n_0 |                                                       |                1 |              6 |
+|  pts/test_out/temp1_reg[10]_0           | pts/test_out/FSM_onehot_current_state[3]_i_1__0_n_0     |                                                       |                1 |              6 |
+|  szj/test_out/clk_counter_reg_n_0_[0]   | szj/test_out/FSM_onehot_current_state[3]_i_1_n_0        |                                                       |                1 |              6 |
+|  clock_IBUF_BUFG                        | JA[3]_i_1_n_0                                           |                                                       |                1 |              6 |
+|  clock_IBUF_BUFG                        | arty/seg2[3]_i_1_n_0                                    |                                                       |                3 |              8 |
+|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__0_n_0                             | szj/pn/led[3]_i_1_n_0                                 |                1 |              8 |
+|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__0_n_0                             | szj/pn/led[7]_i_1_n_0                                 |                1 |              8 |
 |  szj/my_1KHz_clk/CLK                    |                                                         |                                                       |                2 |              8 |
-|  clock_IBUF_BUFG                        | arty/seg2[3]_i_1_n_0                                    |                                                       |                2 |              8 |
-|  clock_IBUF_BUFG                        | arty/seg1[3]_i_1_n_0                                    |                                                       |                2 |              8 |
+|  clock_IBUF_BUFG                        | arty/seg1[3]_i_1_n_0                                    |                                                       |                1 |              8 |
 |  clock_IBUF_BUFG                        | arty/seg3[3]_i_1_n_0                                    |                                                       |                2 |              8 |
-|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__1_n_0                             | szj/pn/led[3]_i_1_n_0                                 |                1 |              8 |
-|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__1_n_0                             | szj/pn/led[7]_i_1_n_0                                 |                1 |              8 |
-|  clock_IBUF_BUFG                        |                                                         | oled/oled_data_reg[5]                                 |                4 |              8 |
-|  clock_IBUF_BUFG                        |                                                         | oled/oled_data_reg[15]_13                             |                3 |             10 |
-|  clock_IBUF_BUFG                        |                                                         | oled/oled_data_reg[0]                                 |                4 |             10 |
-|  clock_IBUF_BUFG                        | menuState                                               | menuState[4]_i_1_n_0                                  |                3 |             10 |
+|  clock_IBUF_BUFG                        | menuState[4]_i_2_n_0                                    | menuState[4]_i_1_n_0                                  |                2 |             10 |
+|  clock_IBUF_BUFG                        | p_4_out[15]                                             |                                                       |                3 |             12 |
 |  clock_IBUF_BUFG                        | arty/ballY                                              | arty/ballRespawnTimer[26]_i_1_n_0                     |                4 |             12 |
-|  clock_IBUF_BUFG                        | led[15]_i_1__0_n_0                                      |                                                       |                4 |             12 |
-|  clock_IBUF_BUFG                        | arty_enable                                             | arty/seg[6]_i_1__2_n_0                                |                5 |             14 |
+|  clock_IBUF_BUFG                        | arty_enable                                             | arty/seg[6]_i_1__0_n_0                                |                5 |             14 |
 |  clock_IBUF_BUFG                        | arty/ballX[6]_i_1_n_0                                   |                                                       |                3 |             14 |
 |  naz/naz_seg_display/my_20KHz_clk/CLK   |                                                         |                                                       |                4 |             16 |
-|  szj/test_out/zj_JA[3]                  | szj/test_out/FSM_onehot_current_state_reg_n_0_[1]       | szj/test_out/FSM_onehot_current_state_reg_n_0_[0]     |                2 |             16 |
-|  clock_IBUF_BUFG                        | szj/mscb/sound_reg_n_0                                  | szj/mscb/led[7]_i_1__0_n_0                            |                4 |             16 |
+|  szj/test_out/clk_counter_reg_n_0_[0]   | szj/test_out/FSM_onehot_current_state_reg_n_0_[1]       | szj/test_out/FSM_onehot_current_state_reg_n_0_[0]     |                1 |             16 |
+|  clock_IBUF_BUFG                        | szj/mscb/sound_reg_n_0                                  | szj/mscb/led[7]_i_1__0_n_0                            |                5 |             16 |
 |  naz/naz_ld_display/my_20KHz_clk/my_clk | naz/naz_ld_display/led[8]_i_1__0_n_0                    |                                                       |                7 |             18 |
-|  clock_IBUF_BUFG                        | arty_enable                                             | arty/railCounter                                      |                5 |             18 |
-|  naz/naz_seg_display/my_20KHz_clk/CLK   | naz/naz_seg_display/an0                                 |                                                       |                7 |             20 |
-|  clock_IBUF_BUFG                        | led[9]_i_1__1_n_0                                       |                                                       |                7 |             20 |
-|  clock_IBUF_BUFG                        | arty_enable                                             | arty/charge[9]_i_1_n_0                                |                7 |             20 |
+|  clock_IBUF_BUFG                        | arty_enable                                             | arty/railCounter                                      |                6 |             18 |
+|  clock_IBUF_BUFG                        | p_4_out[9]                                              |                                                       |                5 |             20 |
 |  clock_IBUF_BUFG                        | arty/spriteOffsetX                                      |                                                       |                4 |             20 |
-|  clock_IBUF_BUFG                        | szj/an[3]_i_1_n_0                                       |                                                       |                5 |             22 |
-|  clock_IBUF_BUFG                        | seg[6]_i_1__0_n_0                                       |                                                       |                6 |             22 |
+|  clock_IBUF_BUFG                        | arty_enable                                             | arty/charge[9]_i_1_n_0                                |                7 |             20 |
+|  naz/naz_seg_display/my_20KHz_clk/CLK   | naz/naz_seg_display/an0                                 |                                                       |                7 |             20 |
 |  clock_IBUF_BUFG                        | arty/timeBetweenShots[11]_i_2_n_0                       | arty/timeBetweenShots[11]_i_1_n_0                     |                3 |             22 |
-|  szj/test_out/zj_JA[3]                  | szj/test_out/temp2                                      |                                                       |                4 |             24 |
-|  my_20KHz_clk/clk20K                    |                                                         |                                                       |                4 |             24 |
-|  clk20K_0                               |                                                         | naz/count[11]_i_1__1_n_0                              |                4 |             24 |
-|  clk20K_0                               | naz/peak_intensity0                                     | naz/peak_intensity[11]_i_1_n_0                        |                3 |             24 |
-|  clock_IBUF_BUFG                        |                                                         | my_20KHz_clk/clk20K                                   |                3 |             24 |
-|  clock_IBUF_BUFG                        | win_state[1]_i_1_n_0                                    |                                                       |                7 |             24 |
-| ~my_audio_input/CLK                     |                                                         |                                                       |                3 |             24 |
+|  clock_IBUF_BUFG                        | an[3]_i_1__0_n_0                                        |                                                       |                7 |             22 |
+|  clock_IBUF_BUFG                        | szj/an[3]_i_1_n_0                                       |                                                       |                4 |             22 |
+|  clock_IBUF_BUFG                        |                                                         | my_20KHz_clk/CLK                                      |                3 |             24 |
+|  clk20K                                 |                                                         | naz/count[11]_i_1__1_n_0                              |                4 |             24 |
+|  my_20KHz_clk/CLK                       |                                                         |                                                       |                5 |             24 |
+|  clk20K                                 | naz/peak_intensity0                                     | naz/peak_intensity[11]_i_1_n_0                        |                2 |             24 |
+|  szj/test_out/clk_counter_reg_n_0_[0]   | szj/test_out/temp2                                      |                                                       |                4 |             24 |
+| ~my_audio_input/temp_reg[0]_0           |                                                         |                                                       |                5 |             24 |
+|  clock_IBUF_BUFG                        | win_state[1]_i_1_n_0                                    |                                                       |               12 |             26 |
 |  clock_IBUF_BUFG                        | arty/ballY                                              | arty/railTemporaryCounter                             |                5 |             34 |
 | ~clk6p25m_reg_n_0_BUFG                  |                                                         | oled/frame_counter[16]_i_1_n_0                        |                5 |             34 |
 |  clock_IBUF_BUFG                        | arty/railCounter                                        | arty/chargeTimer[18]_i_1_n_0                          |                5 |             36 |
-|  gesound/test_out/JX[0]                 | gesound/test_out/out[1]                                 | gesound/test_out/out[0]                               |                6 |             38 |
+|  pts/test_out/temp1_reg[10]_0           | pts/test_out/temp2                                      | pts/test_out/FSM_onehot_current_state_reg_n_0_[0]     |                4 |             38 |
+|  gesound/test_out/temp1_reg[10]_0       | gesound/test_out/temp2                                  | gesound/test_out/FSM_onehot_current_state_reg_n_0_[0] |                4 |             38 |
 | ~clk6p25m_reg_n_0_BUFG                  | oled/delay[0]_i_1_n_0                                   |                                                       |                5 |             40 |
-|  clock_IBUF_BUFG                        | arty/moveRightCount                                     | arty/moveRightCount[21]_i_1_n_0                       |                9 |             44 |
-|  clock_IBUF_BUFG                        | arty/railFR                                             |                                                       |                8 |             44 |
+|  clock_IBUF_BUFG                        | arty/moveRightCount                                     | arty/moveRightCount[21]_i_1_n_0                       |                8 |             44 |
+|  clock_IBUF_BUFG                        | arty/railFR                                             |                                                       |                9 |             44 |
 |  clock_IBUF_BUFG                        | arty/hitTime                                            | arty/railCounter                                      |                6 |             44 |
-|  clock_IBUF_BUFG                        | arty/moveLeftCount                                      |                                                       |               12 |             44 |
-|  clk20K_0                               |                                                         |                                                       |               12 |             46 |
-|  clock_IBUF_BUFG                        | arty/railR[7]_i_1_n_0                                   |                                                       |               12 |             48 |
+|  clock_IBUF_BUFG                        | arty/moveLeftCount                                      |                                                       |                8 |             44 |
+|  clk20K                                 |                                                         |                                                       |               10 |             46 |
+|  clock_IBUF_BUFG                        | arty/railR[7]_i_1_n_0                                   |                                                       |               10 |             48 |
 |  clock_IBUF_BUFG                        | arty_enable                                             | arty/ballRespawnTimer[26]_i_1_n_0                     |               11 |             54 |
-|  clock_IBUF_BUFG                        | arty_enable                                             | arty/ballSpeedCounter[26]_i_1_n_0                     |               12 |             54 |
+|  clock_IBUF_BUFG                        | arty_enable                                             | arty/ballSpeedCounter[26]_i_1_n_0                     |               13 |             54 |
 |  clock_IBUF_BUFG                        | naz/frequency[31]_i_1_n_0                               |                                                       |               29 |             58 |
 |  clock_IBUF_BUFG                        |                                                         | clk6p25m                                              |                8 |             62 |
-|  clock_IBUF_BUFG                        | szj/mscb/count                                          | szj/mscb/count[31]_i_1__2_n_0                         |                8 |             62 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n1/count[0]_i_1__3_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n2/count[0]_i_1__4_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n3/count[0]_i_1__5_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n5/count[0]_i_1__15_n_0                  |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n4/count[0]_i_1__6_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n5/count[0]_i_1__7_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n6/count[0]_i_1__8_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n7/count[0]_i_1__9_n_0                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n0/clear                                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n1/count[0]_i_1__11_n_0                  |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n2/count[0]_i_1__12_n_0                  |                8 |             64 |
-|  clock_IBUF_BUFG                        | szj/mscb/sel                                            |                                                       |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n0/clear                               |                8 |             64 |
-|  clock_IBUF_BUFG                        | naz/sample_counter[0]_i_1_n_0                           |                                                       |                8 |             64 |
-|  clock_IBUF_BUFG                        | naz/sample_counter12_out                                | naz/frequency[31]_i_1_n_0                             |               17 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | gesound/clock_20kHz/count[0]_i_1__25_n_0              |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | gesound/clock_440Hz/clear                             |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | gesound/clock_50mHz/count[0]_i_1__22_n_0              |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | gesound/clock_698Hz/count[0]_i_1__24_n_0              |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | gesound/count[31]_i_1__1_n_0                          |                9 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/clock_20kHz/clear                                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/my_1KHz_clk/clear                                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | my_20KHz_clk/count[0]_i_1__30_n_0                     |                8 |             64 |
-|  clock_IBUF_BUFG                        | szj/sn/debounce_c[31]_i_2_n_0                           | szj/sn/debounce_c[31]_i_1_n_0                         |                9 |             64 |
-|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__1_n_0                             | szj/pn/count[31]_i_1__0_n_0                           |               15 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n3/count[0]_i_1__13_n_0                  |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n4/count[0]_i_1__14_n_0                  |                8 |             64 |
-|  clock_IBUF_BUFG                        | szj/pbo/sel                                             | szj/pbo/debounce_c[0]_i_1_n_0                         |                8 |             64 |
-|  clock_IBUF_BUFG                        | szj/pbo/sound                                           |                                                       |               13 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | szj/clock_50mHz/count[0]_i_1__19_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | pts/count[31]_i_1__3_n_0                              |                8 |             62 |
+|  clock_IBUF_BUFG                        | szj/mscb/count                                          | szj/mscb/count[31]_i_1_n_0                            |                8 |             62 |
 |  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n6/count[0]_i_1__16_n_0                  |                8 |             64 |
 |  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n7/count[0]_i_1__17_n_0                  |                8 |             64 |
 |  clock_IBUF_BUFG                        |                                                         | szj/pbo/clock_125Hz/clear                             |                8 |             64 |
 |  clock_IBUF_BUFG                        |                                                         | szj/pbo/clock_250Hz/count[0]_i_1__1_n_0               |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n5/count[0]_i_1__7_n_0                 |                8 |             64 |
+| ~clk6p25m_reg_n_0_BUFG                  | oled/state                                              |                                                       |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | naz/my_20KHz_clk/clear                                |                8 |             64 |
 |  clock_IBUF_BUFG                        |                                                         | naz/naz_ld_display/my_20KHz_clk/clear                 |                8 |             64 |
 |  clock_IBUF_BUFG                        |                                                         | naz/naz_seg_display/my_1KHz_clk/clear                 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | naz/naz_seg_display/my_20KHz_clk/count[0]_i_1__28_n_0 |                8 |             64 |
-|  clock_IBUF_BUFG                        |                                                         | naz/my_20KHz_clk/clear                                |                8 |             64 |
-| ~clk6p25m_reg_n_0_BUFG                  | oled/state                                              |                                                       |                8 |             64 |
-| ~clk6p25m_reg_n_0_BUFG                  |                                                         | oled/spi_word[39]_i_1_n_0                             |               19 |             90 |
-|  clock_IBUF_BUFG                        | arty_enable                                             |                                                       |               32 |            116 |
-|  clock_IBUF_BUFG                        | pressedL[31]_i_1_n_0                                    |                                                       |               24 |            128 |
-|  clock_IBUF_BUFG                        |                                                         |                                                       |              122 |            476 |
+|  clock_IBUF_BUFG                        |                                                         | naz/naz_seg_display/my_20KHz_clk/count[0]_i_1__33_n_0 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/clock_50mHz/count[0]_i_1__19_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n0/clear                               |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | gesound/clock_20kHz/count[0]_i_1__29_n_0              |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | gesound/clock_440Hz/count[0]_i_1__27_n_0              |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | gesound/clock_50mHz/count[0]_i_1__26_n_0              |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | gesound/clock_698Hz/count[0]_i_1__28_n_0              |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | gesound/count[31]_i_1__2_n_0                          |                9 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | pts/clock_250Hz/clear                                 |                8 |             64 |
+|  clock_IBUF_BUFG                        | naz/sample_counter[0]_i_1_n_0                           |                                                       |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | pts/clock_50mHz/count[0]_i_1__23_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/clock_20kHz/clear                                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/my_1KHz_clk/clear                                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | my_20KHz_clk/count[0]_i_1__35_n_0                     |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n1/count[0]_i_1__3_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n2/count[0]_i_1__4_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n3/count[0]_i_1__5_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n4/count[0]_i_1__6_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | pts/clock_20kHz/count[0]_i_1__25_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n6/count[0]_i_1__8_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        | naz/sample_counter12_out                                | naz/frequency[31]_i_1_n_0                             |               16 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/mscb/clock_n7/count[0]_i_1__9_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG                        | szj/sn/debounce_c[31]_i_2_n_0                           | szj/sn/debounce_c[31]_i_1_n_0                         |                9 |             64 |
+|  clock_IBUF_BUFG                        | szj/pn/count[31]_i_2__0_n_0                             | szj/pn/count[31]_i_1__1_n_0                           |               14 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n0/clear                                 |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n1/count[0]_i_1__11_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        | szj/pbo/sel                                             | szj/pbo/debounce_c[0]_i_1_n_0                         |                8 |             64 |
+|  clock_IBUF_BUFG                        | szj/pbo/sound                                           |                                                       |               14 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n2/count[0]_i_1__12_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n3/count[0]_i_1__13_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n4/count[0]_i_1__14_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        |                                                         | szj/pn/clock_n5/count[0]_i_1__15_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG                        | szj/mscb/sel                                            |                                                       |                8 |             64 |
+| ~clk6p25m_reg_n_0_BUFG                  |                                                         | oled/spi_word[39]_i_1_n_0                             |               22 |             90 |
+|  clock_IBUF_BUFG                        | arty_enable                                             |                                                       |               31 |            116 |
+|  clock_IBUF_BUFG                        | pressedL[31]_i_1_n_0                                    |                                                       |               23 |            128 |
+|  clock_IBUF_BUFG                        |                                                         |                                                       |              148 |            514 |
 +-----------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
 
 

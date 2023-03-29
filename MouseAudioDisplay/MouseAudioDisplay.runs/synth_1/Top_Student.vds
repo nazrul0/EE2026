@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Mar 29 17:12:55 2023
-# Process ID: 15964
+# Start of session at: Wed Mar 29 18:12:58 2023
+# Process ID: 8048
 # Current directory: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1
 # Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
 # Log file: C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.vds
@@ -15,39 +15,39 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17212 
+INFO: Helper process launched with PID 18188 
 WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:146]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:33]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:34]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:35]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:254]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:253]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:298]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:324]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:338]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:344]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:343]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:258]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:257]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:302]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:331]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:339]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:345]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:350]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 372.449 ; gain = 115.980
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 371.609 ; gain = 114.969
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
-WARNING: [Synth 8-6090] variable 'pressedR' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:176]
-WARNING: [Synth 8-6090] variable 'pressedL' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:180]
-WARNING: [Synth 8-6090] variable 'menuSelect' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:187]
-WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:227]
-WARNING: [Synth 8-6090] variable 'win_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:261]
-WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:316]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
-WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:325]
+WARNING: [Synth 8-6090] variable 'pressedR' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:179]
+WARNING: [Synth 8-6090] variable 'pressedL' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:183]
+WARNING: [Synth 8-6090] variable 'menuSelect' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:190]
+WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:230]
+WARNING: [Synth 8-6090] variable 'win_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:265]
+WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:320]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
+WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:332]
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
@@ -105,16 +105,16 @@ WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/75
 INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (1#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 INFO: [Synth 8-6157] synthesizing module 'Menu_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Menu_Data' (2#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Menu_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:377]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Menu_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:377]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Menu_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:384]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Menu_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:384]
 INFO: [Synth 8-6157] synthesizing module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Game_Over_Image' (3#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:378]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:378]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:385]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:385]
 INFO: [Synth 8-6157] synthesizing module 'Win_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Win_Data' (4#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Win_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:379]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Win_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:379]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Win_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:386]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Win_Data' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:386]
 INFO: [Synth 8-6157] synthesizing module 'Artemis_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:23]
 	Parameter doneMove bound to: 2499999 - type: integer 
 	Parameter chargeSegmentDone bound to: 499999 - type: integer 
@@ -162,8 +162,8 @@ WARNING: [Synth 8-689] width (8) of port connection 'y' does not match port widt
 WARNING: [Synth 8-689] width (7) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:262]
 WARNING: [Synth 8-689] width (7) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:262]
 INFO: [Synth 8-6155] done synthesizing module 'Artemis_Individual' (8#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (7) of module 'Artemis_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:380]
-WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (7) of module 'Artemis_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:380]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (7) of module 'Artemis_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:387]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (7) of module 'Artemis_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:387]
 INFO: [Synth 8-6157] synthesizing module 'unit_clk' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'unit_clk' (9#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
@@ -185,7 +185,7 @@ WARNING: [Synth 8-6090] variable 'dp' is written by both blocking and non-blocki
 WARNING: [Synth 8-3936] Found unconnected internal register 'segCode_reg' and it is trimmed from '10' to '3' bits. [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/team_seg_control.v:37]
 INFO: [Synth 8-6155] done synthesizing module 'team_seg_control' (12#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/team_seg_control.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'team_output' (13#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/team_output.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'team_output' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:408]
+WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'team_output' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:415]
 INFO: [Synth 8-6157] synthesizing module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:23]
 INFO: [Synth 8-6157] synthesizing module 'naz_ld_control' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v:23]
 WARNING: [Synth 8-6090] variable 'led' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_ld_control.v:231]
@@ -242,9 +242,9 @@ WARNING: [Synth 8-689] width (11) of port connection 'column' does not match por
 INFO: [Synth 8-6155] done synthesizing module 'naz_oled_control' (17#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v:23]
 WARNING: [Synth 8-350] instance 'naz_oled_display' of module 'naz_oled_control' requires 5 connections, but only 3 given [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'Naz_Individual' (18#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:414]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (11) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:418]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (11) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:419]
+WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:421]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (11) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:425]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (11) of module 'Naz_Individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:426]
 INFO: [Synth 8-6157] synthesizing module 'sz_individual' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:36]
 	Parameter save0 bound to: 7'b0000110 
 	Parameter save1 bound to: 7'b1000001 
@@ -252,7 +252,7 @@ INFO: [Synth 8-6157] synthesizing module 'sz_individual' [C:/Users/75635/Desktop
 	Parameter save3 bound to: 7'b0010010 
 	Parameter play0 bound to: 7'b0011001 
 	Parameter play1 bound to: 7'b0001000 
-	Parameter play2 bound to: 7'b1111001 
+	Parameter play2 bound to: 7'b0111000 
 	Parameter play3 bound to: 7'b0001100 
 INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (19#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:23]
@@ -314,10 +314,14 @@ WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blo
 WARNING: [Synth 8-6014] Unused sequential element isReady_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:48]
 WARNING: [Synth 8-6014] Unused sequential element debounce_c_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:49]
 INFO: [Synth 8-6155] done synthesizing module 'game_end_sound' (27#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:23]
-WARNING: [Synth 8-6014] Unused sequential element gamedata_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:247]
-WARNING: [Synth 8-6014] Unused sequential element number_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:297]
-WARNING: [Synth 8-6014] Unused sequential element brk_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:331]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (28#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
+INFO: [Synth 8-6157] synthesizing module 'play_team_sound' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:23]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'play_team_sound' (28#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'num' does not match port width (4) of module 'play_team_sound' [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:454]
+WARNING: [Synth 8-6014] Unused sequential element gamedata_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:251]
+WARNING: [Synth 8-6014] Unused sequential element number_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:301]
+WARNING: [Synth 8-6014] Unused sequential element brk_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:338]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (29#1) [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
 WARNING: [Synth 8-3331] design music_box has unconnected port prg_case[1]
 WARNING: [Synth 8-3331] design music_box has unconnected port prg_case[0]
 WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[12]
@@ -326,6 +330,7 @@ WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[10]
 WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[9]
 WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[8]
 WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[7]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[0]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[7]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[6]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[5]
@@ -417,10 +422,9 @@ WARNING: [Synth 8-3331] design team_seg_control has unconnected port sw[5]
 WARNING: [Synth 8-3331] design team_seg_control has unconnected port sw[4]
 WARNING: [Synth 8-3331] design team_seg_control has unconnected port sw[3]
 WARNING: [Synth 8-3331] design team_seg_control has unconnected port sw[2]
-WARNING: [Synth 8-3331] design team_seg_control has unconnected port sw[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 482.344 ; gain = 225.875
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 484.141 ; gain = 227.500
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -469,15 +473,27 @@ WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[3] to constant 0 [C:/U
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[2] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[1] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[0] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
-WARNING: [Synth 8-3295] tying undriven pin oled:reset to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[11] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[10] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[9] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[8] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[7] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[6] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[5] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[4] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[3] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[2] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[1] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[0] to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin oled:reset to constant 0 [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:380]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 482.344 ; gain = 225.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 484.141 ; gain = 227.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 482.344 ; gain = 225.875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 484.141 ; gain = 227.500
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -493,22 +509,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 821.996 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 823.926 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 822.102 ; gain = 565.633
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 823.988 ; gain = 567.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 822.102 ; gain = 565.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 823.988 ; gain = 567.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 822.102 ; gain = 565.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 823.988 ; gain = 567.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
@@ -573,6 +589,9 @@ INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Audio_Output'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_time_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:45]
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "dp" won't be mapped to RAM because it is too sparse
@@ -581,9 +600,11 @@ INFO: [Synth 8-5546] ROM "menuSelect" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5545] ROM "pressedR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "pressedR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "pressedL" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "JA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trigger_ges" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prim_t_s_tri" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "victory_sound" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "clk6p25m_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "dp" won't be mapped to RAM because it is too sparse
@@ -592,8 +613,10 @@ INFO: [Synth 8-5546] ROM "menuSelect" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5545] ROM "pressedR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "pressedR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "pressedL" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "JA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trigger_ges" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prim_t_s_tri" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "win_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "victory_sound" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "naz_enable" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "menuSelect" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -646,17 +669,17 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Audio_Output'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 822.102 ; gain = 565.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 823.988 ; gain = 567.348
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|     32139|
-|2     |Top_Student__GB1 |           1|     12943|
-|3     |Top_Student__GB2 |           1|        94|
-|4     |Top_Student__GB3 |           1|     14827|
+|1     |Top_Student__GB0 |           1|     31924|
+|2     |sz_individual    |           1|     10751|
+|3     |Top_Student__GB2 |           1|      4699|
+|4     |Top_Student__GB3 |           1|     14891|
 |5     |Top_Student__GB4 |           1|     33143|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -664,7 +687,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 11    
+	   2 Input     32 Bit       Adders := 12    
 	   3 Input     32 Bit       Adders := 2     
 	   2 Input     27 Bit       Adders := 2     
 	   2 Input     25 Bit       Adders := 1     
@@ -682,54 +705,54 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit       Adders := 4     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 3     
-	   2 Input      4 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 6     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 16    
+	               32 Bit    Registers := 17    
 	               27 Bit    Registers := 2     
 	               25 Bit    Registers := 1     
 	               22 Bit    Registers := 2     
 	               19 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 3     
-	               16 Bit    Registers := 16    
+	               16 Bit    Registers := 18    
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 12    
+	               12 Bit    Registers := 13    
 	               10 Bit    Registers := 8     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 8     
 	                7 Bit    Registers := 13    
 	                6 Bit    Registers := 1     
-	                5 Bit    Registers := 3     
-	                4 Bit    Registers := 13    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 14    
 	                3 Bit    Registers := 4     
 	                2 Bit    Registers := 22    
-	                1 Bit    Registers := 69    
+	                1 Bit    Registers := 79    
 +---Multipliers : 
 	                 3x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
-	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 71    
-	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 82    
+	   8 Input     32 Bit        Muxes := 2     
 	   3 Input     32 Bit        Muxes := 2     
+	  32 Input     32 Bit        Muxes := 1     
 	   6 Input     32 Bit        Muxes := 1     
-	   2 Input     28 Bit        Muxes := 1     
-	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 2     
+	   4 Input     28 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 26    
 	   2 Input     22 Bit        Muxes := 14    
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 1     
 	   2 Input     18 Bit        Muxes := 2     
 	   2 Input     17 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 99    
 	  96 Input     16 Bit        Muxes := 65    
-	   2 Input     16 Bit        Muxes := 97    
+	  14 Input     16 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 18    
 	   6 Input     16 Bit        Muxes := 1     
-	  14 Input     16 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 18    
 	  17 Input     16 Bit        Muxes := 1     
 	  11 Input     16 Bit        Muxes := 2     
@@ -737,16 +760,16 @@ Detailed RTL Component Info :
 	   9 Input     16 Bit        Muxes := 1     
 	   3 Input     15 Bit        Muxes := 14    
 	  96 Input     15 Bit        Muxes := 1     
-	  11 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 1     
 	  96 Input     14 Bit        Muxes := 1     
 	   3 Input     14 Bit        Muxes := 24    
-	   2 Input     13 Bit        Muxes := 5     
+	  11 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
 	  96 Input     13 Bit        Muxes := 1     
 	   3 Input     13 Bit        Muxes := 12    
-	   2 Input     12 Bit        Muxes := 9     
-	  96 Input     12 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 11    
 	   3 Input     12 Bit        Muxes := 12    
+	  96 Input     12 Bit        Muxes := 1     
 	   3 Input     11 Bit        Muxes := 7     
 	   2 Input     10 Bit        Muxes := 14    
 	   5 Input     10 Bit        Muxes := 1     
@@ -764,8 +787,8 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 13    
 	  32 Input      5 Bit        Muxes := 1     
 	   6 Input      5 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 17    
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 20    
 	  11 Input      4 Bit        Muxes := 2     
 	  17 Input      4 Bit        Muxes := 3     
 	   5 Input      4 Bit        Muxes := 1     
@@ -773,16 +796,16 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 9     
 	   3 Input      3 Bit        Muxes := 2     
 	  17 Input      3 Bit        Muxes := 1     
-	  96 Input      2 Bit        Muxes := 6     
 	   3 Input      2 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 23    
-	   2 Input      1 Bit        Muxes := 236   
-	   3 Input      1 Bit        Muxes := 16    
+	  96 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 251   
+	   3 Input      1 Bit        Muxes := 18    
 	   5 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 13    
+	   6 Input      1 Bit        Muxes := 11    
 	   8 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 3     
-	   6 Input      1 Bit        Muxes := 10    
 	  11 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -803,20 +826,20 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 2     
 	               13 Bit    Registers := 1     
 	                7 Bit    Registers := 1     
-	                5 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 19    
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 10    
 +---Multipliers : 
 	                 3x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 29    
 	   6 Input     32 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 42    
 	   4 Input     16 Bit        Muxes := 18    
 	   6 Input     16 Bit        Muxes := 1     
-	  14 Input     16 Bit        Muxes := 1     
 	  11 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 5     
@@ -826,67 +849,41 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 3     
 	   6 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 6     
 	   2 Input      3 Bit        Muxes := 2     
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 21    
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 42    
+	   2 Input      1 Bit        Muxes := 49    
+	   6 Input      1 Bit        Muxes := 11    
 	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
 	   7 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 3     
-	   6 Input      1 Bit        Muxes := 10    
-Module Oled_Display 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     17 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	               40 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     40 Bit        Muxes := 3     
-	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
-	  32 Input     20 Bit        Muxes := 1     
-	   2 Input     17 Bit        Muxes := 1     
-	  32 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	  32 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-Module Menu_Data 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 1     
-	   3 Input     15 Bit        Muxes := 1     
-	  96 Input      2 Bit        Muxes := 1     
 Module unit_clk__1 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__23 
+Module clock_divider__19 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__24 
+Module clock_divider__20 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__25 
+Module clock_divider__21 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider 
+Module clock_divider__22 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -899,13 +896,13 @@ Detailed RTL Component Info :
 	   8 Input     32 Bit        Muxes := 1     
 	   2 Input     28 Bit        Muxes := 1     
 	   4 Input     28 Bit        Muxes := 1     
-Module clock_divider__21 
+Module clock_divider__17 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__22 
+Module clock_divider__18 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -924,6 +921,30 @@ Detailed RTL Component Info :
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 10    
 	   3 Input      1 Bit        Muxes := 2     
+Module clock_divider__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module clock_divider__13 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -943,30 +964,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
 Module clock_divider__16 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__17 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__18 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__19 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__20 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -1005,6 +1002,30 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 12    
 	   3 Input      1 Bit        Muxes := 2     
+Module clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module clock_divider__5 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1029,30 +1050,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__9 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__10 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__11 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__12 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module play_note 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1067,7 +1064,7 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 4     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 4     
-Module Audio_Output 
+Module Audio_Output__1 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
@@ -1099,31 +1096,129 @@ Detailed RTL Component Info :
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module clock_divider__1 
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Menu_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	  96 Input      2 Bit        Muxes := 1     
+Module Game_Over_Image__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 22    
+	   3 Input     12 Bit        Muxes := 1     
+	  96 Input      6 Bit        Muxes := 3     
+	  96 Input      2 Bit        Muxes := 1     
+Module Win_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 20    
+	  96 Input     15 Bit        Muxes := 1     
+	  96 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	  96 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 2     
+	  96 Input     12 Bit        Muxes := 1     
+	  96 Input      6 Bit        Muxes := 2     
+	  96 Input      2 Bit        Muxes := 3     
+Module clock_divider__27 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__2 
+Module clock_divider__28 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__3 
+Module clock_divider__29 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider__4 
+Module clock_divider 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module Audio_Output__1 
+Module Audio_Output 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module play_team_sound 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module clock_divider__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Audio_Output__2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
@@ -1154,25 +1249,6 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module Win_Data 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 20    
-	  96 Input     15 Bit        Muxes := 1     
-	  96 Input     14 Bit        Muxes := 1     
-	   3 Input     14 Bit        Muxes := 1     
-	  96 Input     13 Bit        Muxes := 1     
-	   3 Input     13 Bit        Muxes := 2     
-	  96 Input     12 Bit        Muxes := 1     
-	  96 Input      6 Bit        Muxes := 2     
-	  96 Input      2 Bit        Muxes := 3     
-Module Game_Over_Image__1 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 22    
-	   3 Input     12 Bit        Muxes := 1     
-	  96 Input      6 Bit        Muxes := 3     
-	  96 Input      2 Bit        Muxes := 1     
 Module unit_clk__10 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1461,6 +1537,12 @@ WARNING: [Synth 8-6014] Unused sequential element clock_125Hz/slow_clock_reg was
 WARNING: [Synth 8-6014] Unused sequential element clock_250Hz/slow_clock_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:29]
 INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clock_125Hz/slow_clock_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:29]
+INFO: [Synth 8-5545] ROM "clock_250Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_440Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_698Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1476,8 +1558,6 @@ INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size
 INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_125Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1504,17 +1584,14 @@ INFO: [Synth 8-5545] ROM "clock_n7/slow_clock0" won't be mapped to RAM because a
 INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_440Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_698Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3936] Found unconnected internal register 'column_reg' and it is trimmed from '32' to '11' bits. [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:137]
-WARNING: [Synth 8-3936] Found unconnected internal register 'row_reg' and it is trimmed from '32' to '11' bits. [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:136]
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'column_reg' and it is trimmed from '32' to '11' bits. [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:140]
+WARNING: [Synth 8-3936] Found unconnected internal register 'row_reg' and it is trimmed from '32' to '11' bits. [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:139]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pts/isPlaying_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:59]
+WARNING: [Synth 8-6014] Unused sequential element pts/done_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:59]
 WARNING: [Synth 8-6014] Unused sequential element my_20KHz_clk/my_clk_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:30]
 WARNING: [Synth 8-6014] Unused sequential element team/team_ld_display/my_20KHz_clk/my_clk_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:30]
 WARNING: [Synth 8-6014] Unused sequential element team/team_seg_display/an_reg was removed.  [C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/team_seg_control.v:134]
@@ -1531,14 +1608,13 @@ DSP Report: Generating DSP railR1, operation Mode is: A*(B:0xff).
 DSP Report: operator railR1 is absorbed into DSP railR1.
 DSP Report: Generating DSP railG2, operation Mode is: A*(B:0x82).
 DSP Report: operator railG2 is absorbed into DSP railG2.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/szj/\pn/led_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\row_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (szj/\pn/led_reg[14] )
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[14]) is unused and will be removed from module sz_individual.
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[13]) is unused and will be removed from module sz_individual.
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[12]) is unused and will be removed from module sz_individual.
@@ -1546,98 +1622,99 @@ WARNING: [Synth 8-3332] Sequential element (pn/led_reg[11]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[10]) is unused and will be removed from module sz_individual.
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[9]) is unused and will be removed from module sz_individual.
 WARNING: [Synth 8-3332] Sequential element (pn/led_reg[8]) is unused and will be removed from module sz_individual.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[4][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[3][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[2][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[6][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[5][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[1][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/naz/naz_seg_display/\segCode_reg[0][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/\chosen_num_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/naz/naz_oled_display/\oled_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\row_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\pts/audio_out_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[4][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[6][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[5][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/naz/naz_seg_display/\segCode_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/\chosen_num_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_oled_display/\oled_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/naz/naz_oled_display/\oled_reg[1] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (led_reg[15]) is unused and will be removed from module naz_ld_control.
 WARNING: [Synth 8-3332] Sequential element (led_reg[14]) is unused and will be removed from module naz_ld_control.
@@ -1734,57 +1811,57 @@ WARNING: [Synth 8-3332] Sequential element (oled_reg[6]) is unused and will be r
 WARNING: [Synth 8-3332] Sequential element (oled_reg[5]) is unused and will be removed from module naz_oled_control.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:03:13 . Memory (MB): peak = 914.789 ; gain = 658.320
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:25 ; elapsed = 00:03:39 . Memory (MB): peak = 864.441 ; gain = 607.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+----------------+--------------------------+---------------+----------------+
-|Module Name     | RTL Object               | Depth x Width | Implemented As | 
-+----------------+--------------------------+---------------+----------------+
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Game_Over_Image | gameover                 | 128x16        | LUT            | 
-|Game_Over_Image | gameover                 | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Win_Data        | win                      | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Menu_Data       | menu                     | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | winImage/win             | 128x16        | LUT            | 
-|Top_Student     | nolabel_line378/gameover | 128x16        | LUT            | 
-|Top_Student     | nolabel_line378/gameover | 128x16        | LUT            | 
-|Game_Over_Image | gameover                 | 128x16        | LUT            | 
-|Game_Over_Image | gameover                 | 128x16        | LUT            | 
-+----------------+--------------------------+---------------+----------------+
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Win_Data        | win        | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Game_Over_Image | gameover   | 128x16        | LUT            | 
++----------------+------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
@@ -1804,40 +1881,40 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|      7134|
-|2     |Top_Student__GB1 |           1|      4770|
-|3     |Top_Student__GB2 |           1|        39|
-|4     |Top_Student__GB3 |           1|      3667|
-|5     |Top_Student__GB4 |           1|     13621|
+|1     |Top_Student__GB0 |           1|      6832|
+|2     |sz_individual    |           1|      3249|
+|3     |Top_Student__GB2 |           1|      1410|
+|4     |Top_Student__GB3 |           1|      3698|
+|5     |Top_Student__GB4 |           1|     13612|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:25 ; elapsed = 00:03:37 . Memory (MB): peak = 914.789 ; gain = 658.320
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:55 ; elapsed = 00:04:12 . Memory (MB): peak = 874.113 ; gain = 617.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:32 ; elapsed = 00:03:44 . Memory (MB): peak = 927.551 ; gain = 671.082
+Finished Timing Optimization : Time (s): cpu = 00:04:05 ; elapsed = 00:04:22 . Memory (MB): peak = 925.672 ; gain = 669.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|      7134|
-|2     |Top_Student__GB1 |           1|      4770|
-|3     |Top_Student__GB2 |           1|        39|
-|4     |Top_Student__GB3 |           1|      3652|
-|5     |Top_Student__GB4 |           1|     13621|
+|1     |Top_Student__GB0 |           1|      6832|
+|2     |sz_individual    |           1|      3249|
+|3     |Top_Student__GB2 |           1|      1410|
+|4     |Top_Student__GB3 |           1|      3684|
+|5     |Top_Student__GB4 |           1|     13612|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:42 ; elapsed = 00:03:56 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Technology Mapping : Time (s): cpu = 00:04:18 ; elapsed = 00:04:36 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1861,7 +1938,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:45 ; elapsed = 00:03:58 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished IO Insertion : Time (s): cpu = 00:04:22 ; elapsed = 00:04:40 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1874,7 +1951,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:45 ; elapsed = 00:03:58 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:22 ; elapsed = 00:04:40 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1886,25 +1963,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:23 ; elapsed = 00:04:41 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:23 ; elapsed = 00:04:41 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:23 ; elapsed = 00:04:41 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:23 ; elapsed = 00:04:41 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1914,6 +1991,7 @@ Static Shift Register Report:
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Student | pts/test_out/temp1_reg[10]     | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
 |Top_Student | gesound/test_out/temp1_reg[10] | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
@@ -1935,20 +2013,20 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     3|
-|2     |CARRY4  |  1056|
+|2     |CARRY4  |  1091|
 |3     |DSP48E1 |     2|
-|4     |LUT1    |   212|
-|5     |LUT2    |   838|
-|6     |LUT3    |  1690|
-|7     |LUT4    |  1016|
-|8     |LUT5    |  1013|
-|9     |LUT6    |  2849|
-|10    |MUXF7   |   271|
-|11    |MUXF8   |    45|
-|12    |SRL16E  |     1|
+|4     |LUT1    |   217|
+|5     |LUT2    |   816|
+|6     |LUT3    |  1740|
+|7     |LUT4    |  1017|
+|8     |LUT5    |   922|
+|9     |LUT6    |  2845|
+|10    |MUXF7   |   237|
+|11    |MUXF8   |    36|
+|12    |SRL16E  |     2|
 |13    |FDE_1   |    32|
-|14    |FDRE    |  2219|
-|15    |FDSE    |    65|
+|14    |FDRE    |  2392|
+|15    |FDSE    |    51|
 |16    |IBUF    |    21|
 |17    |OBUF    |    41|
 |18    |OBUFT   |     1|
@@ -1958,66 +2036,71 @@ Report Instance Areas:
 +------+--------------------+--------------------+------+
 |      |Instance            |Module              |Cells |
 +------+--------------------+--------------------+------+
-|1     |top                 |                    | 11375|
-|2     |  arty              |Artemis_Individual  |  3316|
+|1     |top                 |                    | 11466|
+|2     |  arty              |Artemis_Individual  |  3328|
 |3     |    nolabel_line259 |rgb_color_update    |   317|
-|4     |    nolabel_line260 |rgb_color_update_29 |   288|
-|5     |    nolabel_line262 |Game_Over_Image_30  |    17|
-|6     |  gesound           |game_end_sound      |   360|
-|7     |    clock_20kHz     |clock_divider_24    |    52|
-|8     |    clock_440Hz     |clock_divider_25    |    54|
-|9     |    clock_50mHz     |clock_divider_26    |    50|
-|10    |    clock_698Hz     |clock_divider_27    |    53|
-|11    |    test_out        |Audio_Output_28     |    38|
-|12    |  menuImage         |Menu_Data           |   211|
+|4     |    nolabel_line260 |rgb_color_update_33 |   288|
+|5     |    nolabel_line262 |Game_Over_Image_34  |    17|
+|6     |  gesound           |game_end_sound      |   368|
+|7     |    clock_20kHz     |clock_divider_28    |    52|
+|8     |    clock_440Hz     |clock_divider_29    |    53|
+|9     |    clock_50mHz     |clock_divider_30    |    50|
+|10    |    clock_698Hz     |clock_divider_31    |    53|
+|11    |    test_out        |Audio_Output_32     |    39|
+|12    |  menuImage         |Menu_Data           |   219|
 |13    |  my_20KHz_clk      |unit_clk            |    52|
 |14    |  my_audio_input    |Audio_Input         |    77|
-|15    |  naz               |Naz_Individual      |  1956|
-|16    |    my_20KHz_clk    |unit_clk_20         |    63|
+|15    |  naz               |Naz_Individual      |  1949|
+|16    |    my_20KHz_clk    |unit_clk_24         |    63|
 |17    |    naz_ld_display  |naz_ld_control      |   144|
-|18    |      my_20KHz_clk  |unit_clk_23         |    52|
+|18    |      my_20KHz_clk  |unit_clk_27         |    52|
 |19    |    naz_seg_display |naz_seg_control     |   215|
-|20    |      my_1KHz_clk   |unit_clk_21         |    54|
-|21    |      my_20KHz_clk  |unit_clk_22         |    52|
-|22    |  nolabel_line378   |Game_Over_Image     |    61|
-|23    |  oled              |Oled_Display        |   515|
-|24    |  szj               |sz_individual       |  1903|
-|25    |    clock_20kHz     |clock_divider       |    55|
-|26    |    clock_50mHz     |clock_divider_0     |    52|
-|27    |    mscb            |music_box           |   638|
-|28    |      clock_n0      |clock_divider_12    |    54|
-|29    |      clock_n1      |clock_divider_13    |    54|
-|30    |      clock_n2      |clock_divider_14    |    54|
-|31    |      clock_n3      |clock_divider_15    |    57|
-|32    |      clock_n4      |clock_divider_16    |    53|
-|33    |      clock_n5      |clock_divider_17    |    54|
-|34    |      clock_n6      |clock_divider_18    |    55|
-|35    |      clock_n7      |clock_divider_19    |    55|
-|36    |    my_1KHz_clk     |unit_clk_1          |    64|
-|37    |    pbo             |push_button_output  |   315|
-|38    |      clock_125Hz   |clock_divider_10    |    56|
-|39    |      clock_250Hz   |clock_divider_11    |    57|
-|40    |    pn              |play_note           |   588|
-|41    |      clock_n0      |clock_divider_2     |    54|
-|42    |      clock_n1      |clock_divider_3     |    54|
-|43    |      clock_n2      |clock_divider_4     |    54|
-|44    |      clock_n3      |clock_divider_5     |    57|
-|45    |      clock_n4      |clock_divider_6     |    53|
-|46    |      clock_n5      |clock_divider_7     |    54|
-|47    |      clock_n6      |clock_divider_8     |    55|
-|48    |      clock_n7      |clock_divider_9     |    55|
-|49    |    sn              |save_note           |   104|
-|50    |    test_out        |Audio_Output        |    49|
-|51    |  winImage          |Win_Data            |   229|
+|20    |      my_1KHz_clk   |unit_clk_25         |    54|
+|21    |      my_20KHz_clk  |unit_clk_26         |    52|
+|22    |  nolabel_line385   |Game_Over_Image     |     7|
+|23    |  oled              |Oled_Display        |   516|
+|24    |  pts               |play_team_sound     |   295|
+|25    |    clock_20kHz     |clock_divider_20    |    52|
+|26    |    clock_250Hz     |clock_divider_21    |    55|
+|27    |    clock_50mHz     |clock_divider_22    |    50|
+|28    |    test_out        |Audio_Output_23     |    39|
+|29    |  szj               |sz_individual       |  1891|
+|30    |    clock_20kHz     |clock_divider       |    55|
+|31    |    clock_50mHz     |clock_divider_0     |    52|
+|32    |    mscb            |music_box           |   633|
+|33    |      clock_n0      |clock_divider_12    |    54|
+|34    |      clock_n1      |clock_divider_13    |    54|
+|35    |      clock_n2      |clock_divider_14    |    54|
+|36    |      clock_n3      |clock_divider_15    |    57|
+|37    |      clock_n4      |clock_divider_16    |    53|
+|38    |      clock_n5      |clock_divider_17    |    54|
+|39    |      clock_n6      |clock_divider_18    |    55|
+|40    |      clock_n7      |clock_divider_19    |    55|
+|41    |    my_1KHz_clk     |unit_clk_1          |    64|
+|42    |    pbo             |push_button_output  |   313|
+|43    |      clock_125Hz   |clock_divider_10    |    56|
+|44    |      clock_250Hz   |clock_divider_11    |    56|
+|45    |    pn              |play_note           |   584|
+|46    |      clock_n0      |clock_divider_2     |    54|
+|47    |      clock_n1      |clock_divider_3     |    54|
+|48    |      clock_n2      |clock_divider_4     |    54|
+|49    |      clock_n3      |clock_divider_5     |    57|
+|50    |      clock_n4      |clock_divider_6     |    53|
+|51    |      clock_n5      |clock_divider_7     |    54|
+|52    |      clock_n6      |clock_divider_8     |    55|
+|53    |      clock_n7      |clock_divider_9     |    55|
+|54    |    sn              |save_note           |   104|
+|55    |    test_out        |Audio_Output        |    49|
+|56    |  winImage          |Win_Data            |   243|
 +------+--------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:23 ; elapsed = 00:04:41 . Memory (MB): peak = 973.906 ; gain = 717.266
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 279 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:21 ; elapsed = 00:03:44 . Memory (MB): peak = 975.168 ; gain = 378.941
-Synthesis Optimization Complete : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 975.168 ; gain = 718.699
+Synthesis finished with 0 errors, 0 critical warnings and 299 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:49 ; elapsed = 00:04:21 . Memory (MB): peak = 973.906 ; gain = 377.418
+Synthesis Optimization Complete : Time (s): cpu = 00:04:24 ; elapsed = 00:04:42 . Memory (MB): peak = 973.906 ; gain = 717.266
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1427 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1419 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2026,11 +2109,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-348 Infos, 411 Warnings, 0 Critical Warnings and 0 Errors encountered.
+354 Infos, 429 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:51 ; elapsed = 00:04:06 . Memory (MB): peak = 975.168 ; gain = 731.648
+synth_design: Time (s): cpu = 00:04:32 ; elapsed = 00:04:51 . Memory (MB): peak = 973.906 ; gain = 730.129
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 975.168 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 17:17:17 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 973.906 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 18:18:10 2023...
