@@ -46,6 +46,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v}
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/num_to_count.v}
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_note.v}
+  {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v}
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/push_button_output.v}
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v}
   {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v}

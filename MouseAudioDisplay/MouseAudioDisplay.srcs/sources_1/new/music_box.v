@@ -62,18 +62,17 @@ module music_box(
     clock_divider clock_698Hz (.clock(clock),.speed_index(speed_index), .slow_clock(m_clock));
     */
     always @ (posedge clock) begin
-    if (prg_case == 3) begin
+    //if (prg_case == 3) begin
         if ( isReady  == 1) begin
-                if (btnU == 1 && btnD == 0 && btnL == 0)
+                if (btnU == 1) begin
                 isTriggerU <= 1;
-                else if (btnU == 0 && btnD == 1&& btnL == 0)
+                end else if (btnD == 1) begin
                 isTriggerD <= 1;
-                else if (btnU == 0 && btnD == 0 && btnL == 1)
+                end else if (btnL == 1) begin
                 isTriggerL <= 1;
                 //debounce_c <= (isPressed == 0)? 0: debounce_c;
-                else begin
-                isRes <= 0;
-            end
+                end else begin isRes <= 1;
+                end
         end else begin
             if (debounce_c == debounce_max) begin
                isReady <= 1;
@@ -100,6 +99,7 @@ module music_box(
         end else if (isRes == 1) begin
             isPressed <= 0;
             debounce_c <= (isPressed == 1)? 0: debounce_c;
+            isRes = 0;
         end
         
         if (count == 0) begin
@@ -129,7 +129,7 @@ module music_box(
         led <= 0;
      end
  end
- end
+ //end
 assign o_note = note;              
     
 endmodule

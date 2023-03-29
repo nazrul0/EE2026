@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Mar 29 18:47:37 2023
-# Process ID: 21368
+# Start of session at: Wed Mar 29 19:52:23 2023
+# Process ID: 20732
 # Current directory: C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1
 # Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
 # Log file: C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.vds
@@ -15,124 +15,124 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16156 
+INFO: Helper process launched with PID 19612 
 WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:146]
 WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/team_ld_control.v:46]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:33]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:34]
 WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/volume_bars.v:35]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:249]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:248]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:257]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:296]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:322]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:328]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:341]
-WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:340]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:261]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:260]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:269]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:308]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:337]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:343]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
+WARNING: [Synth 8-2301] loop variable declaration is not allowed in this mode of verilog [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 372.086 ; gain = 115.191
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 372.035 ; gain = 115.230
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
-WARNING: [Synth 8-6090] variable 'pressedR' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:176]
-WARNING: [Synth 8-6090] variable 'pressedL' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:180]
-WARNING: [Synth 8-6090] variable 'menuSelect' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:187]
-WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:225]
-WARNING: [Synth 8-6090] variable 'win_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:259]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:333]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
-WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:356]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:358]
-WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:359]
-WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:355]
+WARNING: [Synth 8-6090] variable 'pressedR' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:185]
+WARNING: [Synth 8-6090] variable 'pressedL' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:189]
+WARNING: [Synth 8-6090] variable 'menuSelect' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:196]
+WARNING: [Synth 8-6090] variable 'naz_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:236]
+WARNING: [Synth 8-6090] variable 'win_count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:271]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:348]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:351]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
+WARNING: [Synth 8-6090] variable 'win_state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:371]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:373]
+WARNING: [Synth 8-6090] variable 'seg_active' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:374]
+WARNING: [Synth 8-6090] variable 'state' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:370]
 INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
@@ -191,16 +191,16 @@ WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Na
 INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (1#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 INFO: [Synth 8-6157] synthesizing module 'Menu_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Menu_Data' (2#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Menu_Data.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Menu_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:384]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Menu_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:384]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Menu_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:399]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Menu_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:399]
 INFO: [Synth 8-6157] synthesizing module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Game_Over_Image' (3#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Game_Over_Image.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:385]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:385]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:400]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:400]
 INFO: [Synth 8-6157] synthesizing module 'Win_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Win_Data' (4#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Win_Data.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Win_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:386]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Win_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:386]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (8) of module 'Win_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:401]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (8) of module 'Win_Data' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:401]
 INFO: [Synth 8-6157] synthesizing module 'Artemis_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:23]
 	Parameter doneMove bound to: 2499999 - type: integer 
 	Parameter chargeSegmentDone bound to: 499999 - type: integer 
@@ -230,8 +230,8 @@ WARNING: [Synth 8-689] width (8) of port connection 'y' does not match port widt
 WARNING: [Synth 8-689] width (7) of port connection 'row' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:262]
 WARNING: [Synth 8-689] width (7) of port connection 'column' does not match port width (8) of module 'Game_Over_Image' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:262]
 INFO: [Synth 8-6155] done synthesizing module 'Artemis_Individual' (8#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (7) of module 'Artemis_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:387]
-WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (7) of module 'Artemis_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:387]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (7) of module 'Artemis_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:402]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (7) of module 'Artemis_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:402]
 INFO: [Synth 8-6157] synthesizing module 'unit_clk' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'unit_clk' (9#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Audio_Input' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Input.v:25]
@@ -268,9 +268,9 @@ WARNING: [Synth 8-689] width (11) of port connection 'column' does not match por
 INFO: [Synth 8-6155] done synthesizing module 'naz_oled_control' (19#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_oled_control.v:23]
 WARNING: [Synth 8-350] instance 'naz_oled_display' of module 'naz_oled_control' requires 5 connections, but only 3 given [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'Naz_Individual' (20#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:23]
-WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:422]
-WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (11) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:426]
-WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (11) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:427]
+WARNING: [Synth 8-689] width (12) of port connection 'led' does not match port width (16) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:437]
+WARNING: [Synth 8-689] width (32) of port connection 'row' does not match port width (11) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:441]
+WARNING: [Synth 8-689] width (32) of port connection 'column' does not match port width (11) of module 'Naz_Individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:442]
 INFO: [Synth 8-6157] synthesizing module 'sz_individual' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:36]
 	Parameter save0 bound to: 7'b0000110 
 	Parameter save1 bound to: 7'b1000001 
@@ -278,7 +278,7 @@ INFO: [Synth 8-6157] synthesizing module 'sz_individual' [C:/Users/Nazrul/Deskto
 	Parameter save3 bound to: 7'b0010010 
 	Parameter play0 bound to: 7'b0011001 
 	Parameter play1 bound to: 7'b0001000 
-	Parameter play2 bound to: 7'b1111001 
+	Parameter play2 bound to: 7'b0111000 
 	Parameter play3 bound to: 7'b0001100 
 INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (21#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:23]
@@ -313,24 +313,24 @@ INFO: [Synth 8-226] default block is never used [C:/Users/Nazrul/Desktop/EE2026 
 INFO: [Synth 8-226] default block is never used [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:140]
 INFO: [Synth 8-638] synthesizing module 'Audio_Output' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Output.vhd:63]
 INFO: [Synth 8-256] done synthesizing module 'Audio_Output' (27#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/imports/Desktop/Audio_Output.vhd:63]
-WARNING: [Synth 8-3848] Net sw in module/entity sz_individual does not have driver. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:45]
 INFO: [Synth 8-6155] done synthesizing module 'sz_individual' (28#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:36]
-WARNING: [Synth 8-350] instance 'szj' of module 'sz_individual' requires 11 connections, but only 9 given [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:434]
 INFO: [Synth 8-6157] synthesizing module 'game_end_sound' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:23]
 WARNING: [Synth 8-6014] Unused sequential element isReady_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:48]
 WARNING: [Synth 8-6014] Unused sequential element debounce_c_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:49]
 INFO: [Synth 8-6155] done synthesizing module 'game_end_sound' (29#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:23]
-WARNING: [Synth 8-6014] Unused sequential element brk_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:321]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (30#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[15]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[13]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[12]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[11]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[10]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[9]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[8]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[7]
-WARNING: [Synth 8-3331] design sz_individual has unconnected port sw_i[0]
+INFO: [Synth 8-6157] synthesizing module 'play_team_sound' [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'play_team_sound' (30#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:23]
+WARNING: [Synth 8-6014] Unused sequential element brk_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:336]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (31#1) [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:14]
+WARNING: [Synth 8-3331] design music_box has unconnected port prg_case[1]
+WARNING: [Synth 8-3331] design music_box has unconnected port prg_case[0]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[12]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[11]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[10]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[9]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[8]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[7]
+WARNING: [Synth 8-3331] design sz_individual has unconnected port sw[0]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[7]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[6]
 WARNING: [Synth 8-3331] design volume_bars has unconnected port row[5]
@@ -424,7 +424,7 @@ WARNING: [Synth 8-3331] design naz_ld_control has unconnected port number[4]
 WARNING: [Synth 8-3331] design naz_ld_control has unconnected port number[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 508.090 ; gain = 251.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 508.938 ; gain = 252.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -449,8 +449,6 @@ WARNING: [Synth 8-3295] tying undriven pin naz_oled_display:column[3] to constan
 WARNING: [Synth 8-3295] tying undriven pin naz_oled_display:column[2] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:67]
 WARNING: [Synth 8-3295] tying undriven pin naz_oled_display:column[1] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:67]
 WARNING: [Synth 8-3295] tying undriven pin naz_oled_display:column[0] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Naz_Individual.v:67]
-WARNING: [Synth 8-3295] tying undriven pin pbo:sw to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:90]
-WARNING: [Synth 8-3295] tying undriven pin pn:trigger to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:94]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[11] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:152]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[10] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:152]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[9] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/sz_individual.v:152]
@@ -475,15 +473,27 @@ WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[3] to constant 0 [C:/U
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[2] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[1] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
 WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[0] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/game_end_sound.v:71]
-WARNING: [Synth 8-3295] tying undriven pin oled:reset to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:380]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[11] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[10] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[9] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[8] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[7] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[6] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[5] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[4] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[3] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[2] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[1] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin test_out:DATA2[0] to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:76]
+WARNING: [Synth 8-3295] tying undriven pin oled:reset to constant 0 [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:395]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 508.090 ; gain = 251.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 508.938 ; gain = 252.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 508.090 ; gain = 251.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 508.938 ; gain = 252.133
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -499,22 +509,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 844.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 845.938 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 844.973 ; gain = 588.078
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 846.004 ; gain = 589.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 844.973 ; gain = 588.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 846.004 ; gain = 589.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 844.973 ; gain = 588.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 846.004 ; gain = 589.199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
@@ -625,12 +635,10 @@ INFO: [Synth 8-5544] ROM "sound" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "isReady" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "sound" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "isReady" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "sound" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "sound" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "saving" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "isReady" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -643,6 +651,9 @@ INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Audio_Output'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element count_time_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:45]
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk6p25m" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "dp" won't be mapped to RAM because it is too sparse
@@ -651,9 +662,9 @@ INFO: [Synth 8-5545] ROM "pressedR" won't be mapped to RAM because address size 
 INFO: [Synth 8-5546] ROM "pressedR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "pressedL" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "JA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "prim_t_s_tri" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "trigger_ges" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "number" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "victory_sound" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "p_1_in" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -677,12 +688,11 @@ INFO: [Synth 8-5545] ROM "pressedR" won't be mapped to RAM because address size 
 INFO: [Synth 8-5546] ROM "pressedR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "pressedL" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "JA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "prim_t_s_tri" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "trigger_ges" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "number" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "victory_sound" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "p_1_in" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "win_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "menuSelect" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "menuSelect" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -690,6 +700,8 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "is_valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -808,24 +820,24 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Audio_Output'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 844.973 ; gain = 588.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 846.004 ; gain = 589.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|     30117|
-|2     |Top_Student__GB1 |           1|     11065|
-|3     |Top_Student__GB2 |           1|     38156|
-|4     |Top_Student__GB3 |           1|     22363|
+|1     |Top_Student__GB0 |           1|     28556|
+|2     |Top_Student__GB1 |           1|     15293|
+|3     |Top_Student__GB2 |           1|     39461|
+|4     |Top_Student__GB3 |           1|     21000|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 13    
+	   2 Input     32 Bit       Adders := 14    
 	   2 Input     27 Bit       Adders := 2     
 	   2 Input     26 Bit       Adders := 1     
 	   2 Input     25 Bit       Adders := 1     
@@ -845,13 +857,13 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit       Adders := 5     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 3     
-	   2 Input      4 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 9     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 17    
+	               32 Bit    Registers := 18    
 	               27 Bit    Registers := 2     
 	               26 Bit    Registers := 1     
 	               25 Bit    Registers := 1     
@@ -860,31 +872,32 @@ Detailed RTL Component Info :
 	               19 Bit    Registers := 1     
 	               18 Bit    Registers := 1     
 	               17 Bit    Registers := 3     
-	               16 Bit    Registers := 17    
+	               16 Bit    Registers := 18    
+	               14 Bit    Registers := 1     
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 18    
+	               12 Bit    Registers := 19    
 	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
 	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 11    
+	                8 Bit    Registers := 12    
 	                7 Bit    Registers := 37    
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 17    
+	                4 Bit    Registers := 18    
 	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 21    
-	                1 Bit    Registers := 102   
+	                2 Bit    Registers := 22    
+	                1 Bit    Registers := 111   
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
 	  37 Input     37 Bit        Muxes := 1     
 	   2 Input     37 Bit        Muxes := 69    
-	   2 Input     32 Bit        Muxes := 96    
+	   2 Input     32 Bit        Muxes := 110   
+	   8 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
 	  32 Input     32 Bit        Muxes := 1     
 	   6 Input     32 Bit        Muxes := 1     
-	   3 Input     32 Bit        Muxes := 2     
-	   8 Input     32 Bit        Muxes := 1     
-	   2 Input     28 Bit        Muxes := 1     
-	   4 Input     28 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 2     
+	   4 Input     28 Bit        Muxes := 2     
 	   2 Input     27 Bit        Muxes := 26    
 	   2 Input     26 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
@@ -894,73 +907,73 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 2     
 	   2 Input     17 Bit        Muxes := 23    
 	  17 Input     17 Bit        Muxes := 1     
-	  96 Input     16 Bit        Muxes := 65    
 	   3 Input     16 Bit        Muxes := 17    
 	  17 Input     16 Bit        Muxes := 1     
 	  11 Input     16 Bit        Muxes := 2     
 	   8 Input     16 Bit        Muxes := 1     
 	   9 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 91    
+	  96 Input     16 Bit        Muxes := 65    
+	   2 Input     16 Bit        Muxes := 93    
 	   4 Input     16 Bit        Muxes := 18    
 	  14 Input     16 Bit        Muxes := 1     
 	   3 Input     15 Bit        Muxes := 14    
 	  96 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 6     
 	   3 Input     14 Bit        Muxes := 24    
-	   2 Input     14 Bit        Muxes := 5     
-	  11 Input     14 Bit        Muxes := 2     
+	  11 Input     14 Bit        Muxes := 3     
 	  96 Input     14 Bit        Muxes := 1     
-	   3 Input     13 Bit        Muxes := 12    
 	   2 Input     13 Bit        Muxes := 82    
+	   3 Input     13 Bit        Muxes := 12    
 	   6 Input     13 Bit        Muxes := 2     
 	  96 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 24    
 	   3 Input     12 Bit        Muxes := 12    
-	   2 Input     12 Bit        Muxes := 22    
 	  96 Input     12 Bit        Muxes := 1     
-	   3 Input     11 Bit        Muxes := 7     
 	   2 Input     11 Bit        Muxes := 4     
+	   3 Input     11 Bit        Muxes := 7     
 	   2 Input     10 Bit        Muxes := 15    
 	   2 Input      9 Bit        Muxes := 8     
 	   9 Input      9 Bit        Muxes := 1     
 	  10 Input      9 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 5     
-	  37 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
 	   8 Input      8 Bit        Muxes := 2     
+	  37 Input      8 Bit        Muxes := 3     
 	   2 Input      7 Bit        Muxes := 107   
 	  11 Input      7 Bit        Muxes := 5     
 	   3 Input      7 Bit        Muxes := 2     
-	   6 Input      7 Bit        Muxes := 1     
 	   4 Input      7 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 4     
 	   3 Input      6 Bit        Muxes := 2     
 	  96 Input      6 Bit        Muxes := 8     
-	   2 Input      6 Bit        Muxes := 4     
 	  32 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 16    
 	   6 Input      5 Bit        Muxes := 1     
 	  32 Input      5 Bit        Muxes := 1     
 	  17 Input      4 Bit        Muxes := 3     
 	   5 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 4     
-	   2 Input      4 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 19    
 	  11 Input      4 Bit        Muxes := 2     
-	   6 Input      4 Bit        Muxes := 1     
 	  37 Input      4 Bit        Muxes := 1     
 	  17 Input      3 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 11    
+	   2 Input      3 Bit        Muxes := 9     
+	   4 Input      3 Bit        Muxes := 1     
 	  96 Input      2 Bit        Muxes := 6     
-	   3 Input      2 Bit        Muxes := 23    
-	   2 Input      2 Bit        Muxes := 114   
+	   3 Input      2 Bit        Muxes := 22    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 113   
 	   6 Input      2 Bit        Muxes := 18    
-	   2 Input      1 Bit        Muxes := 406   
-	   3 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 402   
+	   3 Input      1 Bit        Muxes := 18    
 	  11 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 15    
-	   6 Input      1 Bit        Muxes := 48    
+	   4 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 50    
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
 	  17 Input      1 Bit        Muxes := 4     
 	  37 Input      1 Bit        Muxes := 20    
-	   5 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -977,21 +990,22 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 10    
 	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
 	               13 Bit    Registers := 1     
 	                7 Bit    Registers := 3     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 19    
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 9     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 54    
+	   2 Input     32 Bit        Muxes := 57    
 	   6 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 37    
 	   4 Input     16 Bit        Muxes := 18    
 	  14 Input     16 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 5     
-	  11 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 6     
+	  11 Input     14 Bit        Muxes := 3     
 	   2 Input     13 Bit        Muxes := 82    
 	   6 Input     13 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 3     
@@ -1001,29 +1015,21 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 3     
 	   2 Input      7 Bit        Muxes := 5     
-	   6 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 8     
 	   6 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
 	   2 Input      3 Bit        Muxes := 2     
 	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 111   
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 110   
 	   6 Input      2 Bit        Muxes := 18    
-	   3 Input      2 Bit        Muxes := 20    
+	   3 Input      2 Bit        Muxes := 19    
 	   2 Input      1 Bit        Muxes := 196   
-	   4 Input      1 Bit        Muxes := 8     
-	   3 Input      1 Bit        Muxes := 1     
-	   6 Input      1 Bit        Muxes := 48    
+	   6 Input      1 Bit        Muxes := 50    
+	   4 Input      1 Bit        Muxes := 6     
 	   7 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 1     
-Module Menu_Data 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 1     
-	   3 Input     15 Bit        Muxes := 1     
-	  96 Input      2 Bit        Muxes := 1     
 Module rgb_color 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1115,17 +1121,6 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 69    
 	   3 Input      1 Bit        Muxes := 4     
-Module unit_clk__5 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module Audio_Input 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
 Module unit_clk__4 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1190,161 +1185,59 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 1     
-Module unit_clk__10 
+Module clock_divider__27 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module unit_clk__9 
+Module clock_divider__28 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module naz_ld_control 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 33    
-	   3 Input     16 Bit        Muxes := 1     
-	  10 Input      9 Bit        Muxes := 2     
-Module unit_clk__7 
+Module clock_divider__29 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module unit_clk__8 
+Module clock_divider 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module naz_seg_control 
+Module Audio_Output 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                7 Bit    Registers := 13    
-	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      7 Bit        Muxes := 33    
-	  11 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 5     
-	  11 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 10    
-	  11 Input      1 Bit        Muxes := 4     
-Module unit_clk__6 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
-+---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module naz_oled_control 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 1     
-Module Naz_Individual 
+Module play_team_sound 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 1     
-	               12 Bit    Registers := 3     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 11    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   4 Input     28 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-Module Ps2Interface 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     11 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 3     
-+---Registers : 
-	               11 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 17    
-+---Muxes : 
-	  17 Input     17 Bit        Muxes := 1     
-	   2 Input     17 Bit        Muxes := 18    
-	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
-	  17 Input      1 Bit        Muxes := 4     
-Module MouseCtl 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     26 Bit       Adders := 1     
-	   2 Input     24 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 4     
-+---Registers : 
-	               26 Bit    Registers := 1     
-	               24 Bit    Registers := 1     
-	               12 Bit    Registers := 6     
-	                8 Bit    Registers := 3     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 17    
-+---Muxes : 
-	  37 Input     37 Bit        Muxes := 1     
-	   2 Input     37 Bit        Muxes := 69    
-	   2 Input     26 Bit        Muxes := 1     
-	   2 Input     24 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 10    
-	   2 Input      9 Bit        Muxes := 2     
-	  37 Input      8 Bit        Muxes := 3     
-	  37 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
-	  37 Input      1 Bit        Muxes := 20    
-Module Win_Data 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 20    
-	  96 Input     15 Bit        Muxes := 1     
-	  96 Input     14 Bit        Muxes := 1     
-	   3 Input     14 Bit        Muxes := 1     
-	  96 Input     13 Bit        Muxes := 1     
-	   3 Input     13 Bit        Muxes := 2     
-	  96 Input     12 Bit        Muxes := 1     
-	  96 Input      6 Bit        Muxes := 2     
-	  96 Input      2 Bit        Muxes := 3     
-Module Game_Over_Image 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  96 Input     16 Bit        Muxes := 22    
-	   3 Input     12 Bit        Muxes := 1     
-	  96 Input      6 Bit        Muxes := 3     
-	  96 Input      2 Bit        Muxes := 1     
-Module Oled_Display 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     17 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	               40 Bit    Registers := 1     
-	               17 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     40 Bit        Muxes := 3     
-	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
-	  32 Input     20 Bit        Muxes := 1     
-	   2 Input     17 Bit        Muxes := 1     
-	  32 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
-	  32 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module clock_divider__23 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1363,13 +1256,13 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider 
+Module clock_divider__26 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module Audio_Output 
+Module Audio_Output__2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
@@ -1400,7 +1293,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module unit_clk 
+Module unit_clk__5 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -1517,20 +1410,19 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 4     
 	   3 Input     32 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
 	   8 Input      8 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 31    
-	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
 	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
 Module save_note 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1627,6 +1519,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 3     
@@ -1634,9 +1527,181 @@ Detailed RTL Component Info :
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
+Module Ps2Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  17 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 18    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  17 Input      1 Bit        Muxes := 4     
+Module MouseCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 69    
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 2     
+	  37 Input      8 Bit        Muxes := 3     
+	  37 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  37 Input      1 Bit        Muxes := 20    
+Module Win_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 20    
+	  96 Input     15 Bit        Muxes := 1     
+	  96 Input     14 Bit        Muxes := 1     
+	   3 Input     14 Bit        Muxes := 1     
+	  96 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 2     
+	  96 Input     12 Bit        Muxes := 1     
+	  96 Input      6 Bit        Muxes := 2     
+	  96 Input      2 Bit        Muxes := 3     
+Module Game_Over_Image 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 22    
+	   3 Input     12 Bit        Muxes := 1     
+	  96 Input      6 Bit        Muxes := 3     
+	  96 Input      2 Bit        Muxes := 1     
+Module Menu_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	  96 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	  96 Input      2 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module unit_clk__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module unit_clk__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module naz_ld_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 33    
+	   3 Input     16 Bit        Muxes := 1     
+	  10 Input      9 Bit        Muxes := 2     
+Module unit_clk__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module unit_clk__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module naz_seg_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 33    
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 4     
+Module unit_clk__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module naz_oled_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module Naz_Individual 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Audio_Input 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module unit_clk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -1655,8 +1720,12 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clock_125Hz/slow_clock_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:29]
+INFO: [Synth 8-5545] ROM "clock_250Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_440Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_698Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1675,6 +1744,7 @@ INFO: [Synth 8-5545] ROM "clock_n6/slow_clock0" won't be mapped to RAM because a
 INFO: [Synth 8-5545] ROM "clock_n7/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "isReady" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_n0/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_n1/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_n2/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1688,6 +1758,8 @@ WARNING: [Synth 8-6014] Unused sequential element clock_125Hz/slow_clock_reg was
 WARNING: [Synth 8-6014] Unused sequential element clock_250Hz/slow_clock_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/clock_divider.v:29]
 INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3936] Found unconnected internal register 'railFR_reg' and it is trimmed from '25' to '8' bits. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Artemis_Individual.v:200]
 INFO: [Synth 8-5545] ROM "ballX" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
@@ -1696,36 +1768,31 @@ DSP Report: Generating DSP railR1, operation Mode is: A*(B:0xff).
 DSP Report: operator railR1 is absorbed into DSP railR1.
 DSP Report: Generating DSP railG2, operation Mode is: A*(B:0x82).
 DSP Report: operator railG2 is absorbed into DSP railG2.
-INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "team_ld_display/my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "team_seg_display/my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "team_seg_display/my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "win_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_1KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_20KHz_clk/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element my_20KHz_clk/my_clk_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:30]
-INFO: [Synth 8-5545] ROM "sample_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sample_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_125Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_250Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "isReady" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_n0/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_n1/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_n2/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_n3/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element pts/isPlaying_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:59]
+WARNING: [Synth 8-6014] Unused sequential element pts/done_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v:59]
 INFO: [Synth 8-5546] ROM "timeout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3936] Found unconnected internal register 'column_reg' and it is trimmed from '32' to '11' bits. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:137]
-WARNING: [Synth 8-3936] Found unconnected internal register 'row_reg' and it is trimmed from '32' to '11' bits. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:136]
+WARNING: [Synth 8-3936] Found unconnected internal register 'column_reg' and it is trimmed from '32' to '11' bits. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'row_reg' and it is trimmed from '32' to '11' bits. [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/Top_Student.v:145]
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "clock_440Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_698Hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "sound" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_20kHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clock_50mHz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "debounce_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element my_20KHz_clk/my_clk_reg was removed.  [C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/unit_clk.v:30]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_seg_display/segCode_reg[9][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_seg_display/segCode_reg[8][0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_seg_display/segCode_reg[7][0] )
@@ -1802,12 +1869,12 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_ld_display/led_reg[12] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_ld_display/led_reg[13] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\team/team_ld_display/led_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/arty/\railFB_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/arty/\railFB_reg[7] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\team/team_seg_display/an_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/arty/\seg0_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/arty/\seg0_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/arty/\seg0_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/arty/\railFB_reg[6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/arty/\railFB_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\number_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\number_reg[5] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\number_reg[6] )
@@ -1838,6 +1905,31 @@ WARNING: [Synth 8-3332] Sequential element (spriteOffsetX_reg[5]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (spriteOffsetY_reg[7]) is unused and will be removed from module Artemis_Individual.
 WARNING: [Synth 8-3332] Sequential element (spriteOffsetY_reg[6]) is unused and will be removed from module Artemis_Individual.
 WARNING: [Synth 8-3332] Sequential element (spriteOffsetY_reg[5]) is unused and will be removed from module Artemis_Individual.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[11]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[10]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[5]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[4]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[3]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[2]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[1]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (x_max_reg[0]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[11]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[10]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[8]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[6]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[5]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[4]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[3]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[2]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[1]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[0]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (zpos_reg[3]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (zpos_reg[2]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (zpos_reg[1]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (zpos_reg[0]) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (middle_down_reg) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (middle_reg) is unused and will be removed from module MouseCtl.
+WARNING: [Synth 8-3332] Sequential element (new_event_reg) is unused and will be removed from module MouseCtl.
 WARNING: [Synth 8-3332] Sequential element (naz_ld_display/led_reg[15]) is unused and will be removed from module Naz_Individual.
 WARNING: [Synth 8-3332] Sequential element (naz_ld_display/led_reg[14]) is unused and will be removed from module Naz_Individual.
 WARNING: [Synth 8-3332] Sequential element (naz_ld_display/led_reg[13]) is unused and will be removed from module Naz_Individual.
@@ -1902,34 +1994,9 @@ WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[4][3]) i
 WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[4][2]) is unused and will be removed from module Naz_Individual.
 WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[4][1]) is unused and will be removed from module Naz_Individual.
 WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[4][0]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][6]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][5]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][4]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][3]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][2]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][1]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[3][0]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][6]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][5]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][4]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][3]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][2]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][1]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/segCode_reg[2][0]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_seg_display/dp_reg) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[15]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[14]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[13]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[12]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[11]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[10]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[9]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[8]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[7]) is unused and will be removed from module Naz_Individual.
-WARNING: [Synth 8-3332] Sequential element (naz_oled_display/oled_reg[6]) is unused and will be removed from module Naz_Individual.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 906.602 ; gain = 649.707
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:07 . Memory (MB): peak = 895.141 ; gain = 638.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1958,14 +2025,6 @@ ROM:
 |Win_Data        | win        | 128x16        | LUT            | 
 |Win_Data        | win        | 128x16        | LUT            | 
 |Win_Data        | win        | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
-|Menu_Data       | menu       | 128x16        | LUT            | 
 |Game_Over_Image | gameover   | 128x16        | LUT            | 
 |Game_Over_Image | gameover   | 128x16        | LUT            | 
 |Win_Data        | win        | 128x16        | LUT            | 
@@ -1979,6 +2038,14 @@ ROM:
 |Win_Data        | win        | 128x16        | LUT            | 
 |Game_Over_Image | gameover   | 128x16        | LUT            | 
 |Game_Over_Image | gameover   | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
+|Menu_Data       | menu       | 128x16        | LUT            | 
 +----------------+------------+---------------+----------------+
 
 
@@ -1999,38 +2066,38 @@ Report RTL Partitions:
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|     12277|
-|2     |Top_Student__GB1 |           1|      3494|
-|3     |Top_Student__GB2 |           1|      7974|
-|4     |Top_Student__GB3 |           1|      4673|
+|1     |Top_Student__GB0 |           1|     11181|
+|2     |Top_Student__GB1 |           1|      4713|
+|3     |Top_Student__GB2 |           1|      8924|
+|4     |Top_Student__GB3 |           1|      6261|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 906.602 ; gain = 649.707
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:02:20 . Memory (MB): peak = 895.141 ; gain = 638.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 951.605 ; gain = 694.711
+Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:26 . Memory (MB): peak = 954.848 ; gain = 698.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+-----------------+------------+----------+
 |      |RTL Partition    |Replication |Instances |
 +------+-----------------+------------+----------+
-|1     |Top_Student__GB0 |           1|     12276|
-|2     |Top_Student__GB1 |           1|      3406|
-|3     |Top_Student__GB2 |           1|      7974|
-|4     |Top_Student__GB3 |           1|      4675|
+|1     |Top_Student__GB0 |           1|     11181|
+|2     |Top_Student__GB1 |           1|      4713|
+|3     |Top_Student__GB2 |           1|      8924|
+|4     |Top_Student__GB3 |           1|      6173|
 +------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Technology Mapping : Time (s): cpu = 00:02:25 ; elapsed = 00:02:33 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2050,13 +2117,13 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5365] Flop nolabel_line416/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to nolabel_line416/Inst_Ps2Interface/ps2_clk_h_reg_inv.
-INFO: [Synth 8-5365] Flop nolabel_line416/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to nolabel_line416/Inst_Ps2Interface/ps2_data_h_reg_inv.
+INFO: [Synth 8-5365] Flop nolabel_line431/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to nolabel_line431/Inst_Ps2Interface/ps2_clk_h_reg_inv.
+INFO: [Synth 8-5365] Flop nolabel_line431/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to nolabel_line431/Inst_Ps2Interface/ps2_data_h_reg_inv.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:02:18 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished IO Insertion : Time (s): cpu = 00:02:27 ; elapsed = 00:02:34 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2069,7 +2136,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:02:18 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:27 ; elapsed = 00:02:34 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2081,25 +2148,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:14 ; elapsed = 00:02:18 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2109,8 +2176,8 @@ Static Shift Register Report:
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name | RTL Name                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Student | pts/test_out/temp1_reg[10]     | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
 |Top_Student | gesound/test_out/temp1_reg[10] | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|Top_Student | szj/test_out/temp1_reg[10]     | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
 +------------+--------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -2131,21 +2198,21 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     4|
-|2     |CARRY4  |  1156|
+|2     |CARRY4  |  1323|
 |3     |DSP48E1 |     2|
-|4     |LUT1    |   286|
-|5     |LUT2    |  1053|
-|6     |LUT3    |  1945|
-|7     |LUT4    |  1113|
-|8     |LUT5    |  1198|
-|9     |LUT6    |  3324|
-|10    |MUXF7   |   235|
-|11    |MUXF8   |    37|
+|4     |LUT1    |   305|
+|5     |LUT2    |  1136|
+|6     |LUT3    |  2051|
+|7     |LUT4    |  1343|
+|8     |LUT5    |  1242|
+|9     |LUT6    |  3427|
+|10    |MUXF7   |   236|
+|11    |MUXF8   |    38|
 |12    |SRL16E  |     2|
 |13    |FDE_1   |    32|
-|14    |FDRE    |  2262|
-|15    |FDSE    |   105|
-|16    |IBUF    |    20|
+|14    |FDRE    |  2991|
+|15    |FDSE    |    98|
+|16    |IBUF    |    21|
 |17    |IOBUF   |     2|
 |18    |OBUF    |    41|
 |19    |OBUFT   |     1|
@@ -2155,61 +2222,80 @@ Report Instance Areas:
 +------+----------------------+--------------------+------+
 |      |Instance              |Module              |Cells |
 +------+----------------------+--------------------+------+
-|1     |top                   |                    | 12818|
-|2     |  menuImage           |Menu_Data           |   213|
-|3     |  arty                |Artemis_Individual  |  3381|
+|1     |top                   |                    | 14295|
+|2     |  nolabel_line400     |Game_Over_Image     |     6|
+|3     |  arty                |Artemis_Individual  |  3307|
 |4     |    nolabel_line259   |rgb_color_update    |   317|
-|5     |    nolabel_line260   |rgb_color_update_22 |   288|
-|6     |    nolabel_line262   |Game_Over_Image_23  |    17|
-|7     |  gesound             |game_end_sound      |   360|
-|8     |    clock_20kHz       |clock_divider_17    |    52|
-|9     |    clock_440Hz       |clock_divider_18    |    54|
-|10    |    clock_50mHz       |clock_divider_19    |    50|
-|11    |    clock_698Hz       |clock_divider_20    |    53|
-|12    |    test_out          |Audio_Output_21     |    38|
-|13    |  my_20KHz_clk        |unit_clk            |    63|
-|14    |  my_audio_input      |Audio_Input         |    86|
-|15    |  naz                 |Naz_Individual      |  1901|
-|16    |    my_20KHz_clk      |unit_clk_13         |    63|
-|17    |    naz_ld_display    |naz_ld_control      |   114|
-|18    |      my_20KHz_clk    |unit_clk_16         |    54|
-|19    |    naz_seg_display   |naz_seg_control     |   229|
-|20    |      my_1KHz_clk     |unit_clk_14         |    55|
-|21    |      my_20KHz_clk    |unit_clk_15         |    54|
-|22    |  nolabel_line385     |Game_Over_Image     |    12|
-|23    |  nolabel_line416     |MouseCtl            |   878|
+|5     |    nolabel_line260   |rgb_color_update_37 |   288|
+|6     |    nolabel_line262   |Game_Over_Image_38  |    17|
+|7     |  gesound             |game_end_sound      |   368|
+|8     |    clock_20kHz       |clock_divider_32    |    55|
+|9     |    clock_440Hz       |clock_divider_33    |    54|
+|10    |    clock_50mHz       |clock_divider_34    |    52|
+|11    |    clock_698Hz       |clock_divider_35    |    55|
+|12    |    test_out          |Audio_Output_36     |    38|
+|13    |  menuImage           |Menu_Data           |   215|
+|14    |  my_20KHz_clk        |unit_clk            |    63|
+|15    |  my_audio_input      |Audio_Input         |    86|
+|16    |  naz                 |Naz_Individual      |  1914|
+|17    |    my_20KHz_clk      |unit_clk_28         |    63|
+|18    |    naz_ld_display    |naz_ld_control      |   114|
+|19    |      my_20KHz_clk    |unit_clk_31         |    54|
+|20    |    naz_seg_display   |naz_seg_control     |   229|
+|21    |      my_1KHz_clk     |unit_clk_29         |    55|
+|22    |      my_20KHz_clk    |unit_clk_30         |    54|
+|23    |  nolabel_line431     |MouseCtl            |   911|
 |24    |    Inst_Ps2Interface |Ps2Interface        |   282|
-|25    |  oled                |Oled_Display        |   682|
-|26    |  szj                 |sz_individual       |   781|
-|27    |    clock_20kHz       |clock_divider       |    55|
-|28    |    clock_50mHz       |clock_divider_4     |    52|
-|29    |    mscb              |music_box           |   634|
-|30    |      clock_n0        |clock_divider_5     |    54|
-|31    |      clock_n1        |clock_divider_6     |    54|
-|32    |      clock_n2        |clock_divider_7     |    54|
-|33    |      clock_n3        |clock_divider_8     |    57|
-|34    |      clock_n4        |clock_divider_9     |    53|
-|35    |      clock_n5        |clock_divider_10    |    54|
-|36    |      clock_n6        |clock_divider_11    |    55|
-|37    |      clock_n7        |clock_divider_12    |    55|
-|38    |    test_out          |Audio_Output        |    40|
-|39    |  team                |team_output         |   430|
-|40    |    my_20KHz_clk      |unit_clk_0          |    52|
-|41    |    team_ld_display   |team_ld_control     |    81|
-|42    |      my_20KHz_clk    |unit_clk_3          |    52|
-|43    |    team_seg_display  |team_seg_control    |   226|
-|44    |      my_1KHz_clk     |unit_clk_1          |    54|
-|45    |      my_20KHz_clk    |unit_clk_2          |    52|
-|46    |  winImage            |Win_Data            |   229|
+|25    |  oled                |Oled_Display        |   637|
+|26    |  pts                 |play_team_sound     |   327|
+|27    |    clock_20kHz       |clock_divider_24    |    55|
+|28    |    clock_250Hz       |clock_divider_25    |    57|
+|29    |    clock_50mHz       |clock_divider_26    |    52|
+|30    |    test_out          |Audio_Output_27     |    38|
+|31    |  szj                 |sz_individual       |  1903|
+|32    |    clock_20kHz       |clock_divider       |    55|
+|33    |    clock_50mHz       |clock_divider_4     |    52|
+|34    |    mscb              |music_box           |   635|
+|35    |      clock_n0        |clock_divider_16    |    54|
+|36    |      clock_n1        |clock_divider_17    |    54|
+|37    |      clock_n2        |clock_divider_18    |    54|
+|38    |      clock_n3        |clock_divider_19    |    57|
+|39    |      clock_n4        |clock_divider_20    |    53|
+|40    |      clock_n5        |clock_divider_21    |    54|
+|41    |      clock_n6        |clock_divider_22    |    55|
+|42    |      clock_n7        |clock_divider_23    |    55|
+|43    |    my_1KHz_clk       |unit_clk_5          |    64|
+|44    |    pbo               |push_button_output  |   314|
+|45    |      clock_125Hz     |clock_divider_14    |    56|
+|46    |      clock_250Hz     |clock_divider_15    |    57|
+|47    |    pn                |play_note           |   584|
+|48    |      clock_n0        |clock_divider_6     |    54|
+|49    |      clock_n1        |clock_divider_7     |    54|
+|50    |      clock_n2        |clock_divider_8     |    54|
+|51    |      clock_n3        |clock_divider_9     |    57|
+|52    |      clock_n4        |clock_divider_10    |    53|
+|53    |      clock_n5        |clock_divider_11    |    54|
+|54    |      clock_n6        |clock_divider_12    |    55|
+|55    |      clock_n7        |clock_divider_13    |    55|
+|56    |    sn                |save_note           |   105|
+|57    |    test_out          |Audio_Output        |    49|
+|58    |  team                |team_output         |   437|
+|59    |    my_20KHz_clk      |unit_clk_0          |    52|
+|60    |    team_ld_display   |team_ld_control     |    81|
+|61    |      my_20KHz_clk    |unit_clk_3          |    52|
+|62    |    team_seg_display  |team_seg_control    |   227|
+|63    |      my_1KHz_clk     |unit_clk_1          |    54|
+|64    |      my_20KHz_clk    |unit_clk_2          |    52|
+|65    |  winImage            |Win_Data            |   231|
 +------+----------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:27 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 375 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:59 ; elapsed = 00:02:10 . Memory (MB): peak = 1008.602 ; gain = 414.824
-Synthesis Optimization Complete : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 1008.602 ; gain = 751.707
+Synthesis finished with 0 errors, 0 critical warnings and 200 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:11 ; elapsed = 00:02:25 . Memory (MB): peak = 1020.992 ; gain = 427.121
+Synthesis Optimization Complete : Time (s): cpu = 00:02:28 ; elapsed = 00:02:35 . Memory (MB): peak = 1020.992 ; gain = 764.188
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1484 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1654 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2219,11 +2305,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-431 Infos, 400 Warnings, 0 Critical Warnings and 0 Errors encountered.
+433 Infos, 412 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:20 ; elapsed = 00:02:24 . Memory (MB): peak = 1008.602 ; gain = 764.594
+synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:39 . Memory (MB): peak = 1020.992 ; gain = 777.230
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1008.602 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 18:50:07 2023...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1020.992 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 19:55:08 2023...
