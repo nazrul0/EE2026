@@ -129,19 +129,33 @@ module team_seg_control(
     always @ (posedge clk20K)
     begin
     
-    if (an_selector == 2)
+    if (number < 10 && an_selector == 2)
     begin
     an[3:0] <= ~4'b0100;
     seg[6:0] <= an2;
     dp = ~0;
     end
     
-    else if (an_selector == 3)
+    else if (number < 10 && an_selector == 3)
     begin
     an[3:0] <= ~4'b1000;
     seg[6:0] <= an3;   
     dp <= ~1; 
     end
+    
+    if (number == 10 && an_selector == 2)
+    begin
+    an[3:0] <= ~4'b0100;
+    seg[6:0] <= ~7'b0000000;   
+    dp <= ~0;     
+    end
+    
+    if (number == 10 && an_selector == 3)
+    begin
+    an[3:0] <= ~4'b1000;
+    seg[6:0] <= ~7'b0000000;   
+    dp <= ~0;     
+    end    
     
     
     if (peak_intensity <= 4096 && peak_intensity > 3869)

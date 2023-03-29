@@ -1,0 +1,216 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 4284
+License: Customer
+
+Current time: 	Wed Mar 29 21:43:58 SGT 2023
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1707x960
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 335 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Nazrul
+User home directory: C:/Users/Nazrul
+User working directory: C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Nazrul/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Nazrul/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Nazrul/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/vivado.log
+Vivado journal file location: 	C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/vivado.jou
+Engine tmp dir: 	C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/.Xil/Vivado-4284-DESKTOP-NI32BUM
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	175 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 532 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 63 MB (+63614kb) [00:00:15]
+// [Engine Memory]: 505 MB (+378243kb) [00:00:15]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Nazrul\Desktop\EE2026 Project\MouseAudioDisplay\MouseAudioDisplay.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay/MouseAudioDisplay.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 546 MB. GUI used memory: 35 MB. Current time: 3/29/23 9:44:01 PM SGT
+// [Engine Memory]: 546 MB (+16757kb) [00:00:19]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 580 MB (+6345kb) [00:00:26]
+// [GUI Memory]: 70 MB (+3611kb) [00:00:32]
+// [Engine Memory]: 636 MB (+28047kb) [00:00:32]
+// Tcl Message: open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:18 . Memory (MB): peak = 858.191 ; gain = 99.926 
+// Project name: MouseAudioDisplay; location: C:/Users/Nazrul/Desktop/EE2026 Project/MouseAudioDisplay; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 75 MB (+1493kb) [00:00:50]
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.4s
+// Elapsed time: 194 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), oled : Oled_Display (Oled_Display.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 90 MB (+11791kb) [00:04:21]
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), team : team_output (team_output.v)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), team : team_output (team_output.v)]", 9, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 251, 219); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 193, 166); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 140, 231); // ce (w, ck)
+// [GUI Memory]: 98 MB (+3798kb) [00:05:34]
+// Elapsed time: 53 seconds
+selectCodeEditor("Top_Student.v", 402, 235); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 414, 218); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 414, 218); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 419, 199); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 401, 181); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 319, 232); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+selectCodeEditor("team_output.v", 97, 381); // ce (w, ck)
+selectCodeEditor("team_output.v", 97, 381, false, true, false, false, true); // ce (w, ck) - Control Key - Double Click
+selectCodeEditor("team_output.v", 241, 216); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), team : team_output (team_output.v), team_seg_display : team_seg_control (team_seg_control.v)]", 12, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), team : team_output (team_output.v), team_seg_display : team_seg_control (team_seg_control.v)]", 12, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 28 seconds
+selectCodeEditor("team_seg_control.v", 57, 146); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("team_seg_control.v", 340, 171); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("team_seg_control.v", 92, 164); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 254, 219); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("team_seg_control.v", 188, 246); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 103 MB (+85kb) [00:08:04]
+// Elapsed time: 20 seconds
+selectCodeEditor("team_seg_control.v", 119, 229); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'c'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 59, 312); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'v'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 141, 316); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("team_seg_control.v", 139, 281); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 140, 44); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'c'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 141, 281); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'v'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 189, 282); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 338, 260); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 196, 313); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 140, 313); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("team_seg_control.v", 132, 334); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("team_seg_control.v", 173, 347); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 83, 349); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 77, 365); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'c'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 88, 371); // ce (w, ck)
+typeControlKey((HResource) null, "team_seg_control.v", 'v'); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 281, 366); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 145, 399); // ce (w, ck)
+selectCodeEditor("team_seg_control.v", 289, 345); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 444ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 681 MB (+13851kb) [00:09:43]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 685 MB. GUI used memory: 52 MB. Current time: 3/29/23 9:53:27 PM SGT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("Top_Student.v", 370, 148); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_seg_control.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), naz : Naz_Individual (Naz_Individual.v)]", 16, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), naz : Naz_Individual (Naz_Individual.v)]", 16, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 15 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Naz_Individual.v", 4, true, false); // k (j, ck) - Popup Trigger
+selectMenuItem((HResource) null, "Split Vertically"); // JMenuItem (JidePopupMenu)
+// Elapsed time: 96 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+// Elapsed time: 104 seconds
+selectCodeEditor("team_output.v", 223, 161); // ce (w, ck)
+// Elapsed time: 63 seconds
+selectCodeEditor("team_output.v", 516, 265); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 353, 208); // ce (w, ck)
+// Elapsed time: 161 seconds
+selectCodeEditor("Top_Student.v", 476, 323); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 456, 328); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 472, 318); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 475, 302); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 473, 287); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 481, 282); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 195, 200); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 198, 214); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "team_output.v", 2); // k (j, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("team_output.v", 202, 161); // ce (w, ck)

@@ -309,16 +309,12 @@ module Top_Student (
                         number = i;
                     end
                 end
-                
-//                    if (sw[15] == 1)
-//                    begin
-//                        led[15] <= 1;
-//                    end
+              
                     
-                    seg <= team_seg;
-                    an <= team_an;
-                    dp <= team_dp;
-                    led <= team_led;
+                seg <= team_seg;
+                an <= team_an;
+                dp <= team_dp;
+                led <= team_led;
 
 //                naz_enable <= 1;
 //                seg <= naz_seg;
@@ -431,7 +427,8 @@ module Top_Student (
     wire [3:0] team_an;
     wire [6:0] team_seg;
     wire team_dp;
-    team_output team(.clock(clock), .MIC_in(MIC_in), .led(team_led), .sw(sw), .an(team_an), .seg(team_seg), .dp(team_dp), .number(number));  // change number here back to variable once 4e2 is ready
+    team_output team(.clock(clock), .MIC_in(MIC_in), .led(team_led), .sw(sw), .an(team_an), .seg(team_seg), .dp(team_dp), .number(number));
+    
     MouseCtl (.clk(clock), .ps2_clk(PS2Clk), .ps2_data(PS2Data), .value(mouseValue), .setx(0), .sety(0),.setmax_x(0),.setmax_y(0),.xpos(xpos),.ypos(ypos),.zpos(zpos),.left(left),.right(right),.middle(middle),.new_event(new_event),.rst(0));
     
     Naz_Individual naz(
