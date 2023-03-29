@@ -23,9 +23,27 @@ module naz_seg_control(
     input clock,
     input [11:0] peak_intensity,
     input [15:0] sw,
-    output reg [3:0] an,
-    output reg [6:0] seg
+    output reg [3:0] an = ~4'b0000,
+    output reg [6:0] seg = ~7'b0000000,
+    output reg dp = ~0,
+    input [31:0] number
     );
+    
+    reg [9:0] segCode [6:0];
+
+    always @ (posedge clock)
+    begin
+    segCode[0] <= ~7'b0111111;
+    segCode[1] <= ~7'b0000110;
+    segCode[2] <= ~7'b1011011;
+    segCode[3] <= ~7'b1001111;
+    segCode[4] <= ~7'b1100110;
+    segCode[5] <= ~7'b1101101;
+    segCode[6] <= ~7'b1111101;
+    segCode[7] <= ~7'b0000111;
+    segCode[8] <= ~7'b1111111;
+    segCode[9] <= ~7'b1101111;
+    end    
     
     wire clk20K;
     unit_clk my_20KHz_clk(clock,2499, clk20K);
@@ -39,8 +57,90 @@ module naz_seg_control(
         an_selector <= (an_selector == 3) ? 0 : an_selector + 1;
     end
     
+    reg [6:0] an1, an2, an3;
     always @ (posedge clk20K)
     begin
+        // assign an3 and an2 here for each valid number. in the next block, assign for each an_selector value
+        
+        if (number == 0)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[1];
+        end
+        
+        if (number == 1)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[2];
+        end        
+        
+        if (number == 2)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[3];
+        end        
+       
+        if (number == 3)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[4];
+        end         
+        
+        if (number == 4)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[5];
+        end        
+        
+        if (number == 5)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[6];
+        end        
+        
+        if (number == 6)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[7];
+        end        
+        
+        if (number == 7)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[8];
+        end        
+        
+        if (number == 8)
+        begin
+            an3 <= segCode[0];
+            an2 <= segCode[9];
+        end        
+        
+        if (number == 9)
+        begin
+            an3 <= segCode[1];
+            an2 <= segCode[0];
+        end        
+    end    
+    
+    always @ (posedge clk20K)
+    begin
+    
+    // switches off: default indiv + group display. sw[1]: indiv task + improv vol level. sw[2]: freq
+    
+    if (sw[1] == 0 && sw[2] == 0 && an_selector == 2 && number < 10)
+    begin
+    an[3:0] <= ~4'b0100;
+    seg[6:0] <= an2;
+    dp = ~0;
+    end
+    
+    else if (sw[1] == 0 && sw[2] == 0 && an_selector == 3 && number < 10)
+    begin
+    an[3:0] <= ~4'b1000;
+    seg[6:0] <= an3;   
+    dp <= ~1; 
+    end    
     
     if (peak_intensity <= 4096 && peak_intensity > 3869)
         begin
@@ -48,15 +148,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1100111;
+            dp <= ~0;
             end
                                    
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0110000;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
@@ -69,15 +170,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1111111;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0110000;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
@@ -90,15 +192,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b0000111;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0110000;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
@@ -111,15 +214,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1111101;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b1111001;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
@@ -132,15 +236,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1101101;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b1111001;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
@@ -153,15 +258,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1100110;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b1111001;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
@@ -174,15 +280,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1001111;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0111111;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
@@ -195,15 +302,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b1011011;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0111111;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
@@ -216,15 +324,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b0000110;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0111111;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
@@ -237,15 +346,16 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b0001;
             seg[6:0] <= ~7'b0111111;
+            dp <= ~0;
             end
             
-            else if (an_selector == 2)
+            else if (sw[1] == 1 && an_selector == 2)
             begin
             an[3:0] <= ~4'b0100;
             seg[6:0] <= ~7'b0111111;
             end
             
-            else if (an_selector == 3)
+            else if (sw[1] == 1 && an_selector == 3)
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
