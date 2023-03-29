@@ -128,19 +128,19 @@ module naz_seg_control(
     
     // switches off: default indiv + group display. sw[1]: indiv task + improv vol level. sw[2]: freq
     
-    if (sw[1] == 0 && sw[2] == 0 && an_selector == 2 && number < 10)
-    begin
-    an[3:0] <= ~4'b0100;
-    seg[6:0] <= an2;
-    dp = ~0;
-    end
+//    if (sw[1] == 0 && sw[2] == 0 && an_selector == 2 && number < 10)
+//    begin
+//    an[3:0] <= ~4'b0100;
+//    seg[6:0] <= an2;
+//    dp = ~0;
+//    end
     
-    else if (sw[1] == 0 && sw[2] == 0 && an_selector == 3 && number < 10)
-    begin
-    an[3:0] <= ~4'b1000;
-    seg[6:0] <= an3;   
-    dp <= ~1; 
-    end    
+//    else if (sw[1] == 0 && sw[2] == 0 && an_selector == 3 && number < 10)
+//    begin
+//    an[3:0] <= ~4'b1000;
+//    seg[6:0] <= an3;   
+//    dp <= ~1; 
+//    end    
     
     if (peak_intensity <= 4096 && peak_intensity > 3869)
         begin

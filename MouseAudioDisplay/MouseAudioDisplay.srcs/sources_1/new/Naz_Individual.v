@@ -43,8 +43,9 @@ module Naz_Individual (
     unit_clk my_20KHz_clk(.clock(clock), .mvalue(2499), .my_clk(clk20K));
     
     wire [11:0] led_output;
-    reg [31:0] frequency;
-    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(frequency), .sw(sw), .number(number));
+//    reg [31:0] frequency;
+    integer frequency;
+    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(6500), .sw(sw), .number(number));
     wire [3:0] an_output; 
     wire [6:0] seg_output;
     wire dp_output;

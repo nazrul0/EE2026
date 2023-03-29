@@ -45,8 +45,7 @@ module team_output (
     wire [6:0] seg_output;
     wire dp_output;
     team_seg_control team_seg_display(.clock(clock), .peak_intensity(peak_intensity), .sw(sw), .an(an_output), .seg(seg_output), .dp(dp_output), .number(number));
-  
-    
+        
     always @ (posedge clk20K)   // finds mic input peak intensity per 0.2s block and updates led, an, seg accordingly
     begin
         count <= count + 1;
@@ -57,10 +56,12 @@ module team_output (
         count <= 0;
         end
         
-        if (MIC_in > peak_intensity)
+        if (3200 > peak_intensity)
         begin
-        peak_intensity <= MIC_in;
+        peak_intensity <= 3200;
         end
+
+//        peak_intensity <= 3200;
         
         led <= led_output;
         an <= an_output;

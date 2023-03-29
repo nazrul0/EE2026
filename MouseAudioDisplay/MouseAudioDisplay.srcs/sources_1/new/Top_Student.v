@@ -70,7 +70,8 @@ module Top_Student (
     wire[3:0] team_prim_JA;
     wire done_prim_sound;
     reg prim_t_s_tri = 0;
-    reg[31:0] t_s_num = 0;    
+    reg[31:0] t_s_num = 0; 
+    reg pts_ready = 0;    
     
     initial begin
         s[0][0]=5;s[0][1]=13;s[0][2]=5;s[0][3]=13;
@@ -244,7 +245,7 @@ module Top_Student (
         //IRP
         end else begin
         //TEAM
-        JA <= team_imp_JA;     
+        prim_t_s_tri <=0;      
         trigger_ges <= 0;
             if(sw[14]==1)begin
                 win_state = 2;
@@ -304,6 +305,7 @@ module Top_Student (
                 end
                 
                 number = 10;
+                
                 for(integer i = 0;i<10;i=i+1)begin
                     if(seg_active==is_valid[i])begin
                         number = i;
@@ -327,9 +329,12 @@ module Top_Student (
 //                led <= naz_led;
                 
                 if (number<10)begin
+                
                     if(!sw[15]) num_lives = number;
                     JA <= team_prim_JA;
-                    t_s_num <= number;                   
+                    t_s_num <= number;  
+                    prim_t_s_tri <= (pts_ready == 1)? 1: 0;
+                    pts_ready <= 0;                         
                 end
                 
                 brk=0;
@@ -349,12 +354,8 @@ module Top_Student (
                     if(mousey>s[i][0]&&mousey<s[i][1]&&mousex>s[i][2]&&mousex<s[i][3]&&right)begin
                         seg_active[i]<=0;
                     end
-                    if (number<10&&mousey>s[i][0]&&mousey<s[i][1]&&mousex>s[i][2]&&mousex<s[i][3]&&(left||right))begin
-                        prim_t_s_tri <=1;
-                    end else begin
-                        prim_t_s_tri <=0;
-                    end
                 end
+                if (left || right) pts_ready <= 1;                
                 
                 for(integer i = 0;i<6;i=i+1)begin
                     for(integer j = 0;j<3;j=j+1)begin
@@ -383,10 +384,12 @@ module Top_Student (
                 if(column==mousex && row==mousey) oled_data<=16'hF81F;
                 if(num_lives==0)win_state = 1;
             end else if (win_state == 1)begin
+                JA <= team_imp_JA;              
                 oled_data <= gameover;
                 victory_sound <= 0;
                 trigger_ges <= 1;
             end else begin
+                JA <= team_imp_JA;              
                 oled_data <= win;
                 victory_sound <= 1;
                 trigger_ges <= 1;
