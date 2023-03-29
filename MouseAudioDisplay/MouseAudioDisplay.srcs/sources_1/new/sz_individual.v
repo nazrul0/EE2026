@@ -37,7 +37,9 @@ module sz_individual (
     input clk,btnC_i,btnD_i, btnU_i,btnL_i,zj_enable,
     input[15:0] sw_i,
     output[3:0] JX,
-    output[15:0] led 
+    output[15:0] led,
+    output reg [3:0] an = 4'b1111,
+    output reg [6:0] seg = 7'b1111111 
     );
     reg ground = 0;
     wire[15:0] sw;
@@ -59,6 +61,26 @@ module sz_individual (
     wire [31:0] count_time;
     wire[1:0] prg_case;
     
+    parameter save0 = 7'b0000110;
+    parameter save1 = 7'b1000001;
+    parameter save2 = 7'b0001000;
+    parameter save3 = 7'b0010010;
+    
+    parameter play0 = 7'b0011001;
+    parameter play1 = 7'b0001000;
+    parameter play2 = 7'b1111001;
+    parameter play3 = 7'b0001100;
+    
+    wire clk1K;
+    unit_clk my_1KHz_clk(clk, 49999, clk1K);
+    
+    reg [3:0] an_selector = 0;
+        always @ (posedge clk1K)
+        begin
+            an_selector <= (an_selector == 3) ? 0 : an_selector + 1;
+        end
+    
+    
     clock_divider clock_20kHz (.clock(clk),.speed_index(2499), .slow_clock(clk20k));
     clock_divider clock_50mHz (.clock(clk),.speed_index(1), .slow_clock(clk50m));
     clock_divider clock_125Hz (.clock(clk),.speed_index(399998), .slow_clock(clk125));
@@ -68,7 +90,7 @@ module sz_individual (
     push_button_output pbo ( .prg_case(prg_case),.button(btnC_i), .clock(clk), .sw(sw[0]),.count_time(count_time), .audio_out_it(audio_out_it));
     music_box mscb ( .prg_case(prg_case),.btnU(btnU_i),.btnD(btnD_i),.btnL(btnL_i),.clock(clk),.audio_out(audio_out_p), .led(led_p), .o_note(o_note));
     //game_end_sound ges ( .victory(sw[15]),.clk(clk),.audio_out(audio_out),.trigger(btnC));
-    save_note sn (.prg_case(prg_case), .trigger(sw_i[14]), .pbnC(btnC_i), .clk(clk), .note(o_note), .sw(sw_i[5:0]), .out_note(music));
+    save_note sn (.prg_case(prg_case), .trigger(sw_i[14]), .pbnC(btnC_i), .clk(clk), .note(o_note), .sw(sw_i[6:1]), .out_note(music));
     play_note pn (.prg_case(prg_case),.clock(clk),.trigger(sw[15]),.in_note(music),.audio_out(audio_out_s),.led(led_s));
     
     assign audio_out = (zj_enable == 1)? ((sw[15] == 1)? audio_out_s : 
@@ -78,6 +100,54 @@ module sz_individual (
     assign prg_case = (zj_enable == 0)? 0 :
                       (sw[13] == 1)? 1:
                       (sw[15] == 1)? 2: 3;
+    always @ (posedge clk) begin
+        
+    if (an_selector == 0)
+      begin
+        an[3:0] <= ~4'b00001;
+        case (prg_case)
+                2: begin seg[6:0] <= play0; end
+                3: begin seg[6:0] <= save0; end
+                default: seg[6:0] <= 7'b1111111;
+                endcase
+       end
+    else if (an_selector == 1)
+             begin
+             an[3:0] <= ~4'b0010;
+       case (prg_case)
+                     0: begin seg[6:0] <= 7'b1111111; end
+                     1: begin seg[6:0] <= 7'b1111111; end
+                     2: begin seg[6:0] <= play1; end
+                     3: begin seg[6:0] <= save1; end
+                     default: seg[6:0] <= 7'b1111111;
+                     endcase
+   end
+    else if (an_selector == 2)
+      begin
+      an[3:0] <= ~4'b0100;
+      case (prg_case)
+              0: begin seg[6:0] <= 7'b1111111; end
+              1: begin seg[6:0] <= 7'b1111111; end
+              2: begin seg[6:0] <= play2; end
+              3: begin seg[6:0] <= save2; end
+              default: seg[6:0] <= 7'b1111111;
+              endcase
+      end
+                    
+    else if ( an_selector == 3)
+     begin
+       an[3:0] <= ~4'b1000;
+        case (prg_case)
+            0: begin seg[6:0] <= 7'b1111111; end
+            1: begin seg[6:0] <= 7'b1111111; end
+            2: begin seg[6:0] <= play3; end
+            3: begin seg[6:0] <= save3; end
+            default: seg[6:0] <= 7'b1111111;
+        endcase
+     end
+
+    
+    end
     
     Audio_output test_out(
     .CLK(clk50m),      //-- System Clock (50MHz)     

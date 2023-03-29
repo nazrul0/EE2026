@@ -25,7 +25,8 @@ module naz_ld_control(
     input [11:0] peak_intensity,
     output reg [15:0] led,
     input [31:0] frequency,
-    input [15:0] sw
+    input [15:0] sw,
+    input [31:0] number
     );
     
     wire clk20K;
@@ -34,7 +35,7 @@ module naz_ld_control(
     always @ (posedge clk20K)
     begin
     
-    if (sw[1] == 1)
+    if (sw[2] == 0)
     begin
 //        if (peak_intensity <= 4096 && peak_intensity > 3869)
 //        begin
@@ -220,10 +221,17 @@ module naz_ld_control(
         end                                                                                                                   
     end
     
-    else
+    if (sw[3] == 1)
     begin
         led[15:0] <= 16'b0000_0000_0000_0000;
     end
+    
+    if (number < 10 && sw[15] == 1)
+    begin
+        led[15] = 1;
+    end
+    
+    // may have to add else
     
     end
     

@@ -217,15 +217,13 @@ module Top_Student (
         
         end else if(menuState==3)begin
         //NS
-            naz_enable = 1;
+            naz_enable <= 1;
             oled_data <= naz_oled;
             seg <= naz_seg;
             an <= naz_an;
-//            dp <= naz_dp;
             led <= naz_led;
             JB1 <= jb1;
             JB4 <= jb4;
-//            jb3 <= JB3;
         end else if(menuState==4)begin
         //IRP
         end else begin
@@ -303,20 +301,26 @@ module Top_Student (
 //                        led[15] <= 1;
 //                    end
                     
-                    seg <= team_seg;
-                    an <= team_an;
-                    dp <= team_dp;
-                    led <= team_led;
+//                    seg <= team_seg;
+//                    an <= team_an;
+//                    dp <= team_dp;
+//                    led <= team_led;
+
+                naz_enable <= 1;
+                seg <= naz_seg;
+                an <= naz_an;
+                dp <= naz_dp;
+                led <= naz_led;
                     
                 end
                 
                 for(integer i = 0;i<10;i=i+1)begin
                     led[i]=0;
                 end
-                if (number<10)begin
-                    led[number]=1;
-                    num_lives = number;
-                end
+//                if (number<10)begin
+//                    led[number]=1;
+//                    num_lives = number;
+//                end
                 brk=0;
                 for(integer i = 1;i<10;i=i+1)begin
                     if(sw[i]==1&&brk==0)begin
@@ -371,11 +375,12 @@ module Top_Student (
     wire clk20K;
     unit_clk my_20KHz_clk(.clock(clock), .mvalue(2499), .my_clk(clk20K));
     
-    reg naz_enable;
+    reg [2:0] naz_enable;
     wire [11:0] naz_led;
     wire [3:0] naz_an;
     wire [6:0] naz_seg;
     wire [15:0] naz_oled;
+    wire naz_dp;
     wire jb1, jb4;
 
     wire [11:0] MIC_in;
@@ -405,7 +410,9 @@ module Top_Student (
         .seg(naz_seg),
         .row(row),
         .column(column),
-        .oled(naz_oled)
+        .oled(naz_oled),
+        .dp(naz_dp),
+        .number(2)
         );
         
 

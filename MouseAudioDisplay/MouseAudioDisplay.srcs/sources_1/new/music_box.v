@@ -29,7 +29,7 @@ module music_box(
     output [2:0] o_note
     );
     reg [31:0] count = 0, count_b = 0;
-    reg isPressed = 0, isReady = 1, sound = 0;
+    reg isPressed = 0, isReady = 1, sound = 0, isTriggerU = 0, isTriggerD = 0, isTriggerL = 0, isRes = 0;
     reg[31:0] debounce_c = 0, debounce_max = 2499999, count_time = 124999999/2;
     reg [2:0] note = 0;
     wire[7:0] n_clk;
@@ -64,24 +64,44 @@ module music_box(
     always @ (posedge clock) begin
     if (prg_case == 3) begin
         if ( isReady  == 1) begin
-            if (btnU == 1 || btnD == 1 || btnL == 1) begin
-                isPressed <= 1;
-                count <= (isPressed == 0)? 1 : count;
-                if (btnU == 1 && btnD == 0)
-                note <= (isPressed == 0)? note + 1 : note;
-                else if (btnU == 0 && btnD == 1)
-                note <= (isPressed == 0)? note - 1 : note;
-                isReady <= (isPressed == 0)? 0 : isReady;
+                if (btnU == 1 && btnD == 0 && btnL == 0)
+                isTriggerU <= 1;
+                else if (btnU == 0 && btnD == 1&& btnL == 0)
+                isTriggerD <= 1;
+                else if (btnU == 0 && btnD == 0 && btnL == 1)
+                isTriggerL <= 1;
                 //debounce_c <= (isPressed == 0)? 0: debounce_c;
-            end else begin
-                isPressed <= 0;
-                debounce_c <= (isPressed == 1)? 0: debounce_c;
+                else begin
+                isRes <= 0;
             end
         end else begin
             if (debounce_c == debounce_max) begin
                isReady <= 1;
             end else debounce_c <= debounce_c + 1;
         end
+        
+        if(isTriggerU == 1) begin
+            isPressed <= 1;
+            count <= (isPressed == 0)? 1 : count;
+            note <= (isPressed == 0)? note + 1 : note;
+            isReady <= (isPressed == 0)? 0 : isReady;
+            isTriggerU = 0;
+        end else if (isTriggerD == 1) begin
+            isPressed <= 1;
+            count <= (isPressed == 0)? 1 : count;
+            note <= (isPressed == 0)? note - 1 : note;
+            isReady <= (isPressed == 0)? 0 : isReady;
+            isTriggerD = 0;
+        end else if (isTriggerL == 1) begin
+            isPressed <= 1;
+            count <= (isPressed == 0)? 1 : count;
+            isReady <= (isPressed == 0)? 0 : isReady;
+            isTriggerL = 0;
+        end else if (isRes == 1) begin
+            isPressed <= 0;
+            debounce_c <= (isPressed == 1)? 0: debounce_c;
+        end
+        
         if (count == 0) begin
                 sound <= 0;
             end
