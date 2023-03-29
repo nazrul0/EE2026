@@ -129,3 +129,7 @@ set_property src_info {type:XDC file:1 line:200 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN P17 [get_ports {JC[6]}]
 set_property src_info {type:XDC file:1 line:203 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R18 [get_ports {JC[7]}]
+set_property src_info {type:XDC file:1 line:274 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C17 [get_ports PS2Clk]
+set_property src_info {type:XDC file:1 line:277 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B17 [get_ports PS2Data]

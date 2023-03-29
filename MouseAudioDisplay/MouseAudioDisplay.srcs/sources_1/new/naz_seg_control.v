@@ -29,7 +29,7 @@ module naz_seg_control(
     input [31:0] number
     );
     
-    reg [9:0] segCode [6:0];
+    reg [6:0] segCode [9:0];
 
     always @ (posedge clock)
     begin

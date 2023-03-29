@@ -27,7 +27,7 @@ module volume_bars(
     output [15:0] image_data
     );
     
-    reg [15:0] bars [5:0][4:0]; // 63x32 pixels total, each bar is 5p tall with 2p buffer
+    reg [23:0] bars [62:0][31:0]; // 63x32 pixels total, each bar is 5p tall with 2p buffer
     
     reg [23:0] black = 6'h000000;
     reg [23:0] red = 6'hFF0000;

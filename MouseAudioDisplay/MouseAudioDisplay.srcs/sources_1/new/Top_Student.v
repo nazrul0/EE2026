@@ -15,9 +15,14 @@ module Top_Student (
     // Delete this comment and include Basys3 inputs and outputs here
     input clock, btnU, btnL, btnR, btnD, btnC, [15:0]sw,
     input JB3, // JB3 is J_MIC3_Pin3,   
+    inout PS2Clk, PS2Data,
     output reg dp, [7:0] JC, reg [15:0] led, reg [3:0] an, reg [6:0] seg, reg JB1, reg JB4, // JB1, JB4 are J_MIC3_Pin1, J_MIC3_Pin4
     output reg [3:0] JA
     );
+    reg [11:0] mouseValue=0;
+    wire [11:0] xpos,ypos;
+    wire [3:0] zpos;
+    wire left, right, middle, new_event;
     reg clk6p25m = 0;
     integer clk6p25m_count = 0;
     reg[15:0] oled_data = 16'h07E0;
@@ -35,7 +40,6 @@ module Top_Student (
     integer win_row = 3;
     integer win_col = 1;
     integer win_count = 0;
-    integer gamedata;
     integer num_lives;
     wire [15:0] gameover;
     wire [15:0] win;
@@ -50,6 +54,7 @@ module Top_Student (
     wire [3:0] arty_an;
     wire [6:0] arty_seg;
     wire [15:0] arty_oled;
+    reg [6:0] mousex, mousey;
    
     //Szj's declarations
     reg zj_enable = 0;
@@ -229,7 +234,7 @@ module Top_Student (
         end else begin
         //TEAM
         JA <= team_imp_JA;
-        //trigger_ges <= 1;
+        trigger_ges <= 0;
             if(sw[14]==1)begin
                 win_state = 2;
             end
@@ -237,11 +242,8 @@ module Top_Student (
                 seg_active = is_valid[5];
                 win_count = 0;
                 win_state = 0;
-                gamedata = win_row+3*win_col;
-                gamedata = gamedata + 10;
-                if(gamedata>15)gamedata=gamedata-15;
-                win_row=gamedata/3;
-                win_col=gamedata%3;
+                win_row = (win_row+4)%6;
+                win_col = (win_col+2)%3;
                 num_lives = 5;
                 for(integer i = 0;i<6;i=i+1)begin
                     for(integer j = 0;j<3;j=j+1)begin
@@ -250,7 +252,10 @@ module Top_Student (
                 end
             end
             if(win_state==0)begin
-                if(state[win_row][win_count]==2)begin
+                mousex <= (xpos/10 >= 96) ? 95: xpos/10;
+                mousey <= (ypos/10 >= 64) ? 63: ypos/10;
+                for(integer i=0;i<16;i=i+1)led[i]<=0;
+                if(state[win_row][win_col]==2)begin
                     win_count<=win_count+1;
                     if(win_count==49999999)begin
                         win_state=2;
@@ -294,33 +299,25 @@ module Top_Student (
                     end
                 end
                 
-                if (number < 10)
-                begin
 //                    if (sw[15] == 1)
 //                    begin
 //                        led[15] <= 1;
 //                    end
                     
-//                    seg <= team_seg;
-//                    an <= team_an;
-//                    dp <= team_dp;
-//                    led <= team_led;
+                    seg <= team_seg;
+                    an <= team_an;
+                    dp <= team_dp;
+                    led <= team_led;
 
-                naz_enable <= 1;
-                seg <= naz_seg;
-                an <= naz_an;
-                dp <= naz_dp;
-                led <= naz_led;
-                    
-                end
+//                naz_enable <= 1;
+//                seg <= naz_seg;
+//                an <= naz_an;
+//                dp <= naz_dp;
+//                led <= naz_led;
                 
-                for(integer i = 0;i<10;i=i+1)begin
-                    led[i]=0;
+                if (number<10)begin
+                    num_lives = number;
                 end
-//                if (number<10)begin
-//                    led[number]=1;
-//                    num_lives = number;
-//                end
                 brk=0;
                 for(integer i = 1;i<10;i=i+1)begin
                     if(sw[i]==1&&brk==0)begin
@@ -332,7 +329,14 @@ module Top_Student (
                     if(seg_active[i]==1&&row>s[i][0]&&row<s[i][1]&&column>s[i][2]&&column<s[i][3])begin
                         oled_data<=16'hFFFF;
                     end
+                    if(mousey>s[i][0]&&mousey<s[i][1]&&mousex>s[i][2]&&mousex<s[i][3]&&left)begin
+                        seg_active[i]<=1;
+                    end
+                    if(mousey>s[i][0]&&mousey<s[i][1]&&mousex>s[i][2]&&mousex<s[i][3]&&right)begin
+                        seg_active[i]<=0;
+                    end
                 end
+                
                 for(integer i = 0;i<6;i=i+1)begin
                     for(integer j = 0;j<3;j=j+1)begin
                         if(row>grid[i][j][0]&&row<grid[i][j][1]&&column>grid[i][j][2]&&column<grid[i][j][3])begin
@@ -346,8 +350,18 @@ module Top_Student (
                                 oled_data<=16'hF800;
                             end
                         end
+                        if(mousey>grid[i][j][0]&&mousey<grid[i][j][1]&&mousex>grid[i][j][2]&&mousex<grid[i][j][3]&&left&&state[i][j]==0)begin
+                            if(i==win_row&&j==win_col)begin
+                                state[i][j]<=2;
+                                win_state<=2;
+                            end else begin
+                                state[i][j]<=1;
+                                seg_active<=is_valid[num_lives-1];
+                            end
+                        end
                     end
                 end
+                if(column==mousex && row==mousey) oled_data<=16'hF81F;
                 if(num_lives==0)win_state = 1;
             end else if (win_state == 1)begin
                 oled_data <= gameover;
@@ -394,11 +408,12 @@ module Top_Student (
         );
     
     
-    wire [11:0] team_led;
+    wire [15:0] team_led;
     wire [3:0] team_an;
     wire [6:0] team_seg;
     wire team_dp;
-    team_output team(.clock(clock), .MIC_in(MIC_in), .led(team_led), .sw(sw), .an(team_an), .seg(team_seg), .dp(team_dp), .number(2));  // change number here back to variable once 4e2 is ready
+    team_output team(.clock(clock), .MIC_in(MIC_in), .led(team_led), .sw(sw), .an(team_an), .seg(team_seg), .dp(team_dp), .number(number));  // change number here back to variable once 4e2 is ready
+    MouseCtl (.clk(clock), .ps2_clk(PS2Clk), .ps2_data(PS2Data), .value(mouseValue), .setx(0), .sety(0),.setmax_x(0),.setmax_y(0),.xpos(xpos),.ypos(ypos),.zpos(zpos),.left(left),.right(right),.middle(middle),.new_event(new_event),.rst(0));
     
     Naz_Individual naz(
         .clock(clock),
@@ -408,11 +423,11 @@ module Top_Student (
         .sw(sw),
         .an(naz_an),
         .seg(naz_seg),
-        .row(row),
+        .row(row), 
         .column(column),
         .oled(naz_oled),
         .dp(naz_dp),
-        .number(2)
+        .number(number)
         );
         
 

@@ -53,7 +53,7 @@ module Naz_Individual (
     begin
         if (enable == 1)
         begin
-            chosen_num = 5; 
+            chosen_num = number; 
         end
         
         else if (enable == 2)

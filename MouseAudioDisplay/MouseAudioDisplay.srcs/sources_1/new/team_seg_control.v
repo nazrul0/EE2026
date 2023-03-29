@@ -27,10 +27,10 @@ module team_seg_control(
     output reg [3:0] an,
     output reg [6:0] seg,
     output reg dp = ~0,
-    input number
+    input [31:0] number
     );
     
-    reg [9:0] segCode;
+    reg [6:0] segCode [9:0];
 
     always @ (posedge clock)
     begin

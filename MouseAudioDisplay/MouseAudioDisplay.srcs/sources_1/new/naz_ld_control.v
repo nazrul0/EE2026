@@ -225,13 +225,7 @@ module naz_ld_control(
     begin
         led[15:0] <= 16'b0000_0000_0000_0000;
     end
-    
-    if (number < 10 && sw[15] == 1)
-    begin
-        led[15] = 1;
-    end
-    
-    // may have to add else
+   
     
     end
     
