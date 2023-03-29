@@ -57,6 +57,11 @@ module Top_Student (
     wire [15:0] zj_led;
     reg victory_sound = 0, trigger_ges = 0;
     wire [3:0] team_imp_JA;
+    wire [3:0] zj_an;
+    wire [6:0] zj_seg;
+    
+    //Szj prelimary team
+    
     
     initial begin
         s[0][0]=5;s[0][1]=13;s[0][2]=5;s[0][3]=13;
@@ -214,6 +219,8 @@ module Top_Student (
         zj_enable = 1;
         JA <= zj_JA;
         led <= zj_led;
+        seg <= zj_seg;
+        an <= zj_an;
         
         end else if(menuState==3)begin
         //NS
@@ -423,9 +430,11 @@ module Top_Student (
             .btnU_i(btnU),
             .btnL_i(btnL),
             .zj_enable(zj_enable),
-            .sw_i(sw),
+            .sw(sw),
             .JX(zj_JA),
-            .led(zj_led) 
+            .led(zj_led),
+            .seg(zj_seg),
+            .an(zj_an) 
             );
 
   game_end_sound gesound(

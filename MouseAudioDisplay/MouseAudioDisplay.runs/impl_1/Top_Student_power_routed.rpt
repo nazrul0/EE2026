@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Mar 29 15:39:53 2023
-| Host             : DESKTOP-NI32BUM running 64-bit major release  (build 9200)
+| Date             : Wed Mar 29 17:29:16 2023
+| Host             : LAPTOP-P1EPJJFM running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.132        |
+| Total On-Chip Power (W)  | 0.136        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.060        |
+| Dynamic (W)              | 0.065        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.3         |
@@ -52,20 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.010 |        3 |       --- |             --- |
-| Slice Logic             |     0.016 |    10215 |       --- |             --- |
-|   LUT as Logic          |     0.013 |     6442 |     20800 |           30.97 |
-|   CARRY4                |     0.002 |      930 |      8150 |           11.41 |
-|   Register              |    <0.001 |     1911 |     41600 |            4.59 |
-|   LUT as Shift Register |    <0.001 |        2 |      9600 |            0.02 |
-|   F7/F8 Muxes           |    <0.001 |      266 |     32600 |            0.82 |
-|   Others                |     0.000 |       67 |       --- |             --- |
+| Clocks                  |     0.012 |        3 |       --- |             --- |
+| Slice Logic             |     0.017 |    11574 |       --- |             --- |
+|   LUT as Logic          |     0.014 |     6993 |     20800 |           33.62 |
+|   CARRY4                |     0.002 |     1053 |      8150 |           12.92 |
+|   Register              |    <0.001 |     2498 |     41600 |            6.00 |
+|   LUT as Shift Register |    <0.001 |        1 |      9600 |            0.01 |
+|   Others                |     0.000 |       97 |       --- |             --- |
+|   F7/F8 Muxes           |     0.000 |      316 |     32600 |            0.97 |
 |   BUFG                  |     0.000 |        2 |        32 |            6.25 |
-| Signals                 |     0.017 |     8050 |       --- |             --- |
+| Signals                 |     0.018 |     9108 |       --- |             --- |
 | DSPs                    |    <0.001 |        2 |        90 |            2.22 |
-| I/O                     |     0.016 |       62 |       106 |           58.49 |
+| I/O                     |     0.017 |       63 |       106 |           59.43 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.132 |          |           |                 |
+| Total                   |     0.136 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.054 |       0.044 |      0.010 |
+| Vccint    |       1.000 |     0.058 |       0.048 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,8 +144,8 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| Top_Student         |     0.060 |
-|   arty              |     0.012 |
+| Top_Student         |     0.065 |
+|   arty              |     0.011 |
 |     nolabel_line259 |    <0.001 |
 |     nolabel_line260 |     0.002 |
 |     nolabel_line262 |    <0.001 |
@@ -158,19 +158,19 @@ Table of Contents
 |   menuImage         |    <0.001 |
 |   my_20KHz_clk      |    <0.001 |
 |   my_audio_input    |    <0.001 |
-|   naz               |     0.017 |
+|   naz               |     0.016 |
 |     my_20KHz_clk    |    <0.001 |
 |     naz_ld_display  |    <0.001 |
 |       my_20KHz_clk  |    <0.001 |
 |     naz_seg_display |     0.001 |
 |       my_1KHz_clk   |    <0.001 |
 |       my_20KHz_clk  |    <0.001 |
-|   nolabel_line371   |     0.000 |
+|   nolabel_line378   |    <0.001 |
 |   oled              |    <0.001 |
-|   szj               |     0.004 |
+|   szj               |     0.010 |
 |     clock_20kHz     |    <0.001 |
 |     clock_50mHz     |    <0.001 |
-|     mscb            |     0.003 |
+|     mscb            |     0.004 |
 |       clock_n0      |    <0.001 |
 |       clock_n1      |    <0.001 |
 |       clock_n2      |    <0.001 |
@@ -179,6 +179,20 @@ Table of Contents
 |       clock_n5      |    <0.001 |
 |       clock_n6      |    <0.001 |
 |       clock_n7      |    <0.001 |
+|     my_1KHz_clk     |    <0.001 |
+|     pbo             |     0.001 |
+|       clock_125Hz   |    <0.001 |
+|       clock_250Hz   |    <0.001 |
+|     pn              |     0.003 |
+|       clock_n0      |    <0.001 |
+|       clock_n1      |    <0.001 |
+|       clock_n2      |    <0.001 |
+|       clock_n3      |    <0.001 |
+|       clock_n4      |    <0.001 |
+|       clock_n5      |    <0.001 |
+|       clock_n6      |    <0.001 |
+|       clock_n7      |    <0.001 |
+|     sn              |    <0.001 |
 |     test_out        |    <0.001 |
 |   winImage          |    <0.001 |
 +---------------------+-----------+
