@@ -61,7 +61,10 @@ module Top_Student (
     wire [6:0] zj_seg;
     
     //Szj prelimary team
-    
+    wire[3:0] team_prim_JA;
+    wire done_prim_sound;
+    reg prim_t_s_tri = 0;
+    reg t_s_num = 0;
     
     initial begin
         s[0][0]=5;s[0][1]=13;s[0][2]=5;s[0][3]=13;
@@ -236,7 +239,8 @@ module Top_Student (
         end else begin
         //TEAM
         JA <= team_imp_JA;
-        //trigger_ges <= 1;
+        trigger_ges <= 0;
+        prim_t_s_tri <= 0;
             if(sw[14]==1)begin
                 win_state = 2;
             end
@@ -319,6 +323,9 @@ module Top_Student (
                 dp <= naz_dp;
                 led <= naz_led;
                     
+               JA <= team_prim_JA;
+               t_s_num <= number;
+               prim_t_s_tri <= 1;
                 end
                 
                 for(integer i = 0;i<10;i=i+1)begin
@@ -443,5 +450,8 @@ module Top_Student (
                 .JX(team_imp_JA),
                 .trigger(trigger_ges)
                 );
+                
+play_team_sound pts( .button(prim_t_s_tri), .clock(clock), .num(t_s_num),
+                .JX(team_prim_JA), .done(done_prim_sound) );
     
 endmodule

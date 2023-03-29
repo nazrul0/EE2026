@@ -42,7 +42,6 @@ output [3:0] JX, output reg done = 0 );
     
  
     always @ (posedge clock) begin
-
             count_time [31:0] = ((num == 1) ? 12499999 : (num == 2) ? 12499999*2 : 
                             (num == 3) ? 12499999*3 : (num == 4) ? 12499999*4 : 
                             (num == 5) ? 12499999*5 : (num == 6) ? 12499999*6 : 

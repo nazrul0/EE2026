@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -46,6 +45,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/naz_seg_control.v}
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/num_to_count.v}
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_note.v}
+  {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/play_team_sound.v}
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/push_button_output.v}
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color.v}
   {C:/Users/75635/Desktop/EE2026/team project/MouseAudioDisplay/MouseAudioDisplay.srcs/sources_1/new/rgb_color_update.v}
