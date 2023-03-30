@@ -144,8 +144,8 @@ module naz_seg_control(
     dp <= ~1; 
     end    
     
-    if (sw[2] == 0)
-    begin
+//    if (sw[2] == 0)
+//    begin
     if (peak_intensity <= 4096 && peak_intensity > 3869)
         begin
             if (an_selector == 0)
@@ -165,6 +165,12 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
+            end
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
             end
         end
             
@@ -188,6 +194,12 @@ module naz_seg_control(
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
             end            
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end            
         end
             
     else if (peak_intensity <= 3642 && peak_intensity > 3415)
@@ -209,7 +221,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b1110110;
-            end            
+            end      
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                  
         end
             
     else if (peak_intensity <= 3415 && peak_intensity > 3188)
@@ -231,7 +249,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
-            end            
+            end  
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                      
         end
             
     else if (peak_intensity <= 3188 && peak_intensity > 2961)
@@ -253,7 +277,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
-            end                
+            end  
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                          
         end
             
     else if (peak_intensity <= 2961 && peak_intensity > 2734)
@@ -275,7 +305,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0010101;
-            end               
+            end  
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                         
         end
             
     else if (peak_intensity <= 2734 && peak_intensity > 2507)
@@ -297,7 +333,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
-            end           
+            end  
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                     
         end
             
     else if (peak_intensity <= 2507 && peak_intensity > 2280)
@@ -319,7 +361,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
-            end            
+            end  
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                      
         end
             
     else if (peak_intensity <= 2280 && peak_intensity > 2053)
@@ -341,7 +389,13 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
-            end            
+            end 
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                       
         end
                 
     else if (peak_intensity <= 2053)
@@ -363,11 +417,17 @@ module naz_seg_control(
             begin
             an[3:0] <= ~4'b1000;
             seg[6:0] <= ~7'b0111000;
-            end            
+            end   
+            
+            else if (sw[1] == 0 && sw[2] == 1 && an_selector == 3)
+            begin
+            an[3:0] <= ~4'b1000;
+            seg[6:0] <= ~7'b1110001;
+            end                     
         end
     
     end
-    end
+//    end
     
     
     
