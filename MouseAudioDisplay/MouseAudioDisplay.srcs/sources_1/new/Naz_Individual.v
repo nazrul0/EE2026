@@ -37,15 +37,15 @@ module Naz_Individual (
     
     reg [11:0] peak_intensity = 0;
     reg [11:0] div_intensity = 0;
-    reg [11:0] count = 0;
+    reg [31:0] count = 0;
     
     wire clk20K;
     unit_clk my_20KHz_clk(.clock(clock), .mvalue(2499), .my_clk(clk20K));
     
     wire [11:0] led_output;
-//    reg [31:0] frequency;
-    integer frequency;
-    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(6500), .sw(sw), .number(number));
+    reg [31:0] frequency;
+    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(frequency), .sw(sw), .number(number));
+    
     wire [3:0] an_output; 
     wire [6:0] seg_output;
     wire dp_output;
@@ -62,10 +62,13 @@ module Naz_Individual (
             chosen_num = number;
         end
     end
-    naz_seg_control naz_seg_display(.clock(clock), .peak_intensity(peak_intensity), .sw(sw), .an(an_output), .seg(seg_output), .dp(dp_output), .number(chosen_num));
+    naz_seg_control naz_seg_display(.clock(clock), .peak_intensity(peak_intensity), .sw(sw), .an(an_output), .seg(seg_output), .dp(dp_output), .number(chosen_num), .enable(enable));
     
     wire [15:0] oled_output;
     naz_oled_control naz_oled_display(.clock(clock), .peak_intensity(peak_intensity), .oled(oled_output));
+    
+    reg [31:0] sample_counter = 0;       // count how many times value appears
+    reg [31:0] clock_counter = 0;       // records time taken for value_counter to reach 1000    
     
     always @ (posedge clk20K)   // finds mic input peak intensity per 0.2s block and updates led, an, seg accordingly
     begin
@@ -82,6 +85,24 @@ module Naz_Individual (
         peak_intensity <= MIC_in;
         end
         
+        if (MIC_in > 2048 && MIC_in <= 2280)
+        begin
+            sample_counter <= sample_counter + 1;
+        end        
+        
+        if (sample_counter >= 1 && sample_counter < 1000)
+        begin
+            clock_counter <= clock_counter + 1;
+        end        
+        
+        if (sample_counter == 1000)
+        begin
+            frequency <= (sample_counter * 20000)/(2 * clock_counter);
+            
+            sample_counter <= 0;
+            clock_counter <= 0;
+        end        
+        
         led <= led_output;
         an <= an_output;
         seg <= seg_output;
@@ -90,55 +111,44 @@ module Naz_Individual (
 
     end  
     
-    reg [31:0] sample_counter = 0;       // count how many times value appears
-    reg start_clock_counter = 0;        
-    reg [31:0] clock_counter = 0;       // records time taken for value_counter to reach 1000
+
 //    reg [31:0] frequency = 0;
     
-    always @ (posedge clock)
-    begin
-//        if (MIC_in == 2507 && clock_counter == 0)
-//        begin
-//            start_clock_counter <= 1;
-//        end
-        
-//        if (start_clock_counter == 1)
-//        begin
-//            clock_counter <= clock_counter + 1;
-//        end
-        
-//        if (MIC_in == 2507 && sample_counter < 1000)
+//    always @ (posedge clock)
+//    begin       
+//        if (MIC_in > 2048 && MIC_in <= 2280)
 //        begin
 //            sample_counter <= sample_counter + 1;
 //        end
         
+//        if (sample_counter >= 1 && sample_counter < 1000)
+//        begin
+//            clock_counter <= clock_counter + 1;
+//        end        
+        
 //        if (sample_counter == 1000)
 //        begin
-//            frequency <= (500 * 100000000) / clock_counter;
-            
-//            sample_counter <= 0;
-//            start_clock_counter <= 0;
-//            clock_counter <= 0;
-//        end
-        
-        if (MIC_in > 2048 && MIC_in <= 2280)
-        begin
-            sample_counter <= sample_counter + 1;
-        end
-        
-        if (sample_counter >= 1 && sample_counter <1000)
-        begin
-            clock_counter <= clock_counter + 1;
-        end
-        
-        else if (sample_counter == 1000)
-        begin
-            frequency <= (500 * 100000000) / clock_counter;
 //            frequency <= (sample_counter * 100000000)/(2 * clock_counter);
             
-            sample_counter <= 0;
-            clock_counter <= 0;
-        end
-    end
+//            sample_counter <= 0;
+//            clock_counter <= 0;
+//        end
+//    end
     
 endmodule
+
+
+//        if (sample_counter < 200)
+//        begin
+//        frequency <= 2100;
+//        end
+        
+//        if (sample_counter >= 200 && sample_counter < 800)
+//        begin
+//        frequency <= 3100;
+//        end
+        
+//        if (sample_counter >= 800 && sample_counter < 1000)
+//        begin
+//        frequency <= 4100;
+//        end        

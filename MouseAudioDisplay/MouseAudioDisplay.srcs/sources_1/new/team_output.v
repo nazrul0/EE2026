@@ -56,18 +56,32 @@ module team_output (
         count <= 0;
         end
         
-        if (3200 > peak_intensity)
+        if (MIC_in > peak_intensity)
         begin
-        peak_intensity <= 3200;
+        peak_intensity <= MIC_in;
         end
-
-//        peak_intensity <= 3200;
+        
+        // to verify that peak_intensity values are being fed into led and seg control properly. this means that the issue is with the peak_intensity value itself - may be assigned to MIC_in properly? 
+//        if (count < 2000)
+//        begin
+//        peak_intensity <= 2500;
+//        end        
+        
+//        else if (count >= 2000 && count < 3000) 
+//        begin
+//        peak_intensity <= 3500;
+//        end
+        
+//        else if (count >= 3000 && count < 4000)
+//        begin
+//        peak_intensity <= 4000;
+//        end
         
         led <= led_output;
         an <= an_output;
         seg <= seg_output;
         dp <= dp_output;
 
-    end  
+    end      
     
 endmodule

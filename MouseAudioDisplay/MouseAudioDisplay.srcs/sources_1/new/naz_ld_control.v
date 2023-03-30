@@ -37,56 +37,8 @@ module naz_ld_control(
     
     if (sw[2] == 0)
     begin
-//        if (peak_intensity <= 4096 && peak_intensity > 3869)
-//        begin
-//            led[15:0] <= 16'b0000_0001_1111_1111;
-//        end
-                
-//        else if (peak_intensity <= 3869 && peak_intensity > 3642)
-//        begin
-//            led[15:0] <= 16'b0000_0000_1111_1111;
-//        end
-            
-//        else if (peak_intensity <= 3642 && peak_intensity > 3415)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0111_1111;
-//        end
-                
-//        else if (peak_intensity <= 3415 && peak_intensity > 3188)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0011_1111;
-//        end
-                
-//        else if (peak_intensity <= 3188 && peak_intensity > 2961)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0001_1111;
-//        end
-                
-//        else if (peak_intensity <= 2961 && peak_intensity > 2734)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0000_1111;
-//        end
-                
-//        else if (peak_intensity <= 2734 && peak_intensity > 2507)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0000_0111;
-//        end
-                
-//        else if (peak_intensity <= 2507 && peak_intensity > 2280)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0000_0011;
-//        end
-                
-//        else if (peak_intensity <= 2280 && peak_intensity > 2053)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0000_0001;
-//        end
-                
-//        else if (peak_intensity <= 2053)
-//        begin
-//            led[15:0] <= 16'b0000_0000_0000_0000;
-//        end
 
+        for(integer i=0;i<16;i=i+1)led[i]<=0;        
         if (peak_intensity <= 4096 && peak_intensity > 3869)
         begin
             led[8:0] <= 9'b111111111;
@@ -230,3 +182,54 @@ module naz_ld_control(
     end
     
 endmodule
+
+
+//        if (peak_intensity <= 4096 && peak_intensity > 3869)
+    //        begin
+    //            led[15:0] <= 16'b0000_0001_1111_1111;
+    //        end
+                    
+    //        else if (peak_intensity <= 3869 && peak_intensity > 3642)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_1111_1111;
+    //        end
+                
+    //        else if (peak_intensity <= 3642 && peak_intensity > 3415)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0111_1111;
+    //        end
+                    
+    //        else if (peak_intensity <= 3415 && peak_intensity > 3188)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0011_1111;
+    //        end
+                    
+    //        else if (peak_intensity <= 3188 && peak_intensity > 2961)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0001_1111;
+    //        end
+                    
+    //        else if (peak_intensity <= 2961 && peak_intensity > 2734)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0000_1111;
+    //        end
+                    
+    //        else if (peak_intensity <= 2734 && peak_intensity > 2507)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0000_0111;
+    //        end
+                    
+    //        else if (peak_intensity <= 2507 && peak_intensity > 2280)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0000_0011;
+    //        end
+                    
+    //        else if (peak_intensity <= 2280 && peak_intensity > 2053)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0000_0001;
+    //        end
+                    
+    //        else if (peak_intensity <= 2053)
+    //        begin
+    //            led[15:0] <= 16'b0000_0000_0000_0000;
+    //        end

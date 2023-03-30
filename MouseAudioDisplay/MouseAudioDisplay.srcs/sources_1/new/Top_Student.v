@@ -311,18 +311,13 @@ module Top_Student (
                         number = i;
                     end
                 end
-                
-//                    if (sw[15] == 1)
-//                    begin
-//                        led[15] <= 1;
-//                    end
-                    
-                    seg <= team_seg;
-                    an <= team_an;
-                    dp <= team_dp;
-                    led <= team_led;
+                                    
+                seg <= team_seg;
+                an <= team_an;
+                dp <= team_dp;
+                led <= team_led;
 
-//                naz_enable <= 1;
+//                naz_enable <= 2;
 //                seg <= naz_seg;
 //                an <= naz_an;
 //                dp <= naz_dp;
