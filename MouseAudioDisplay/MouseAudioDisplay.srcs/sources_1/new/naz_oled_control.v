@@ -22,17 +22,18 @@
 
 module naz_oled_control(
     input clock,
-    input [10:0] row,
-    input [10:0] column,
+    input [31:0] row,
+    input [31:0] column,
     input [11:0] peak_intensity,
-    output reg [15:0] oled
+    output reg [15:0] oled,
+    input [4:0] vol_level
     );
     
     wire clk20K;
     unit_clk my_20KHz_clk(clock,2499, clk20K);
     
     wire [15:0] show_bars;
-    volume_bars (.row(row), .column(column), .peak_intensity(peak_intensity), .image_data(show_bars));
+    volume_bars (.clock(clock), .row(row), .column(column), .peak_intensity(peak_intensity), .image_data(show_bars), .vol_level(vol_level));
     
     always @ (posedge clock)
     begin

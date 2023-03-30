@@ -33,15 +33,6 @@ module team_ld_control(
     
     always @ (posedge clk20K)
     begin
-//        if (sw[15] == 1)
-//        begin
-//        led[15] <= 1;
-//        end
-        
-//        else if (sw[15] == 0)
-//        begin
-//        led[15] <= 0;
-//        end
     
         for(integer i=0;i<16;i=i+1)led[i]<=0;
         if (peak_intensity <= 4096 && peak_intensity > 3869)

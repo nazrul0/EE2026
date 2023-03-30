@@ -26,7 +26,7 @@ module team_seg_control(
     input [15:0] sw,
     output reg [3:0] an,
     output reg [6:0] seg,
-    output reg dp = ~0,
+    output reg dp,
     input [31:0] number
     );
     
@@ -128,21 +128,7 @@ module team_seg_control(
     
     always @ (posedge clk20K)
     begin
-    
-//    if (an_selector == 2)
-//    begin
-//    an[3:0] <= ~4'b0100;
-//    seg[6:0] <= an2;
-//    dp = ~0;
-//    end
-    
-//    else if (an_selector == 3)
-//    begin
-//    an[3:0] <= ~4'b1000;
-//    seg[6:0] <= an3;   
-//    dp <= ~1; 
-//    end
-    
+        
     if (number < 10 && an_selector == 2)
     begin
     an[3:0] <= ~4'b0100;
