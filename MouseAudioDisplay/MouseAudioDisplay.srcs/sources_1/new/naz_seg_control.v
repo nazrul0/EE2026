@@ -27,7 +27,8 @@ module naz_seg_control(
     output reg [6:0] seg = ~7'b0000000,
     output reg dp = ~0,
     input [31:0] number,
-    input [2:0] enable
+    input [2:0] enable,
+    input [31:0] frequency
     );
     
     reg [6:0] segCode [9:0];
@@ -143,6 +144,8 @@ module naz_seg_control(
     dp <= ~1; 
     end    
     
+    if (sw[2] == 0)
+    begin
     if (peak_intensity <= 4096 && peak_intensity > 3869)
         begin
             if (an_selector == 0)
@@ -364,5 +367,10 @@ module naz_seg_control(
         end
     
     end
+    end
+    
+    
+    
+    
     
 endmodule

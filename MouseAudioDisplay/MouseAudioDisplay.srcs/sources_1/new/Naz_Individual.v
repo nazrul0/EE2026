@@ -28,23 +28,30 @@ module Naz_Individual (
     input [15:0] sw,
     output reg [3:0] an,
     output reg [6:0] seg,
-    input [10:0] row,
-    input [10:0] column,
+    input [31:0] row,
+    input [31:0] column,
     output reg [15:0] oled,
     output reg dp,
-    input [31:0] number
+    input [31:0] number,
+    output reg [11:0] indiv_intensity
     );
     
     reg [11:0] peak_intensity = 0;
     reg [11:0] div_intensity = 0;
     reg [31:0] count = 0;
     
+    always @ (posedge clock)
+    begin
+        indiv_intensity <= peak_intensity;
+    end
+    
     wire clk20K;
     unit_clk my_20KHz_clk(.clock(clock), .mvalue(2499), .my_clk(clk20K));
     
     wire [11:0] led_output;
     reg [31:0] frequency;
-    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(frequency), .sw(sw), .number(number));
+    wire [4:0] vol_level;
+    naz_ld_control naz_ld_display(.clock(clock), .peak_intensity(peak_intensity), .led(led_output), .frequency(frequency), .sw(sw), .number(number), .vol_level(vol_level));
     
     wire [3:0] an_output; 
     wire [6:0] seg_output;
@@ -62,10 +69,10 @@ module Naz_Individual (
             chosen_num = number;
         end
     end
-    naz_seg_control naz_seg_display(.clock(clock), .peak_intensity(peak_intensity), .sw(sw), .an(an_output), .seg(seg_output), .dp(dp_output), .number(chosen_num), .enable(enable));
+    naz_seg_control naz_seg_display(.clock(clock), .peak_intensity(peak_intensity), .sw(sw), .an(an_output), .seg(seg_output), .dp(dp_output), .number(chosen_num), .enable(enable), .frequency(frequency));
     
     wire [15:0] oled_output;
-    naz_oled_control naz_oled_display(.clock(clock), .peak_intensity(peak_intensity), .oled(oled_output));
+    naz_oled_control naz_oled_display(.clock(clock), .row(row), .column(column), .peak_intensity(peak_intensity), .oled(oled_output), .vol_level(vol_level));
     
     reg [31:0] sample_counter = 0;       // count how many times value appears
     reg [31:0] clock_counter = 0;       // records time taken for value_counter to reach 1000    

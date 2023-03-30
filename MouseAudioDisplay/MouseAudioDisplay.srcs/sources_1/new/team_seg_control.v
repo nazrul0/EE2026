@@ -26,7 +26,7 @@ module team_seg_control(
     input [15:0] sw,
     output reg [3:0] an,
     output reg [6:0] seg,
-    output reg dp = ~0,
+    output reg dp,
     input [31:0] number
     );
     
